@@ -1,0 +1,2452 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head>
+<!--varsion:2011-06-16-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>国家大剧院官方网站-国家大剧院制作乔治·比才歌剧《卡门》</title>
+<link href="/templates/css/style.css" rel="stylesheet" type="text/css">
+<link href="/templates/css/link.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+<!--
+.ol_style ol{ list-style:decimal;}
+-->
+</style>
+<script type="text/javascript" async="" src="http://static.gridsumdissector.com/js/Clients/GWD-002230-464E3B/gs.js"></script><script type="text/javascript" src="/templates/js/claend.js"></script>
+<script src="/templates/inc/jquery-1.4.4.min.js"></script>
+<script src="/templates/js/viewhistory.js"></script>
+<script src="/templates/js/common.js"></script>
+<script src="/templates/js/jquerycookie.js"></script>
+<script language="javascript">
+//演出搜索关键字框事件
+function keyValue(obj,val){
+	if(obj.value == "" || obj.value=="关键字"){
+		obj.value=val;
+	}
+}
+
+//日期选择器
+function setTextTime(str){
+	var obj = document.getElementById(str);
+	HS_setDate(obj);
+}
+
+
+
+//演出搜索表单验证
+function checkSearch(){
+	var keyObj = document.getElementById("key");
+	if(keyObj.value == "关键字"){
+		keyObj.value="";
+	}
+	//得到演出剧场拼成字符串
+	//得到剧目类别拼成字符串
+	var temK2 = "";
+	var keyword2Arr = document.getElementsByName("keyword2Chk");
+	for(var i=0;i<keyword2Arr.length;i++){
+		if(keyword2Arr[i].checked == true){
+			temK2 += keyword2Arr[i].value+",";
+		}
+	}
+	if(temK2 != ""){
+		temK2 = temK2.substring(0,temK2.length-1);
+	}
+	document.getElementById("keyword2").value=temK2;
+	return true;
+}
+
+
+
+function checkIssale(obj){
+	var issale = '0';
+	if(issale=='1'){
+		obj.style.display = "";
+	}
+}
+function checkKeywordsType(obj){
+	var keytype = '0';
+	if(keytype=='1'){
+		obj.style.display = "";
+	}
+}
+//我最近浏览记录cookies操作
+function serHistroty(){
+var name = "djyhistory";
+var title = '国家大剧院制作乔治·比才歌剧《卡门》';
+var value= "null^"+title+"^"+location.href+",";
+//读取cookies 并写入
+getCookies(name,value,30,getValue);
+}
+function getValue(pathArr,titleArr,urlArr){
+	var rhtml = "<table width='100%' border='0' cellspacing='0' cellpadding='0'>";
+	for(var i=titleArr.length-1;i>=0;i--){
+		rhtml += "<tr>";
+		rhtml += "	<td align='left' class='linkf12_black line_h24 line_blue'><a name='jlHref' href='"+urlArr[i]+"' title='"+titleArr[i]+"'>"+(titleArr[i].length>14?(titleArr[i].substr(0,14)+'...'):titleArr[i])+"</a></td>";
+		rhtml += "</tr>"; 
+	}
+	rhtml += "</table>";
+	document.getElementById("divid1").innerHTML=rhtml;
+}
+//显示曲目、剧目、咏叹的切换
+function showQMxx(){
+	var td5 = document.getElementById("td5");
+	if('' != ""){
+		var field8 = '';
+		if(field8=='0'){
+			td5.innerHTML = "<a href=\"javascript:chengeStyle1('5','td','table','1','11')\">曲目</a>";
+		}else if(field8=='1'){
+			td5.innerHTML = "<a href=\"javascript:chengeStyle1('5','td','table','1','11')\">剧目</a>";
+		}else if(field8=='2'){
+			td5.innerHTML = "<a href=\"javascript:chengeStyle1('5','td','table','1','11')\">咏叹</a>";
+		}
+	}
+}
+
+
+</script>
+</head>
+
+<body onload="MM_preloadImages('/templates/images/lmpd/ycgp_off.jpg','/templates/images/lmpd/jmsc_off.jpg','/templates/images/lmpd/gdyypd_off.jpg','/templates/images/lmpd/yspj_off.jpg','/templates/images/lmpd/cgyl_off.jpg','/templates/images/lmpd/zxdt_off.jpg','/templates/images/lmpd/ysjl_off.jpg','/templates/images/lmpd/hyjlb_off.jpg','/templates/images/lmpd/jygl_off.jpg','/templates/images/lmpd/zzyhb_off.jpg')">
+
+<script language="javascript">
+//具体时间数据 需要删除
+var timeArr = new Array();
+
+timeArr.push('2013.12.21 19:30');
+
+timeArr.push('2013.12.23 19:30');
+
+timeArr.push('2013.12.22 19:30');
+
+timeArr.push('2013.12.20 19:30');
+
+
+var jtDate = "2013.12.20-2013.12.23";
+</script>
+<script language="javascript">
+//设置浏览记录cookies。用于在我的大剧院中显示
+function setUserHistory(){
+	var userHistoryname = "djyuserhistory";
+	var userHistorytitle = '国家大剧院制作乔治·比才歌剧《卡门》';
+	var userHistorySrc = document.getElementById("performanceImage").src;
+	var userHistoryDate = jtDate;
+	var value= userHistorySrc+"^"+userHistorytitle+"^"+location.href+"^"+userHistoryDate+",";
+	//读取cookies 并写入
+	getUserHistory(userHistoryname,value,30,innerUserHistory);
+}
+function innerUserHistory(){
+
+}
+
+</script>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="body_bg">
+  <tbody><tr>
+    <td align="center" valign="top">
+	<table width="1003" border="0" cellspacing="0" cellpadding="0">
+	<script language="javascript" src="/templates/js/common.js"></script>
+<script language="javascript" src="/templates/js/xgprint.js"></script>
+<script language="javascript">
+ //顶部关键字搜索
+ function topKeySearch(){
+ 	var tempKey = document.getElementById("topSKey").value;
+	if(tempKey == ""){
+		alert('请填写搜索条件');
+		//return false;
+	}else{
+		document.getElementById("top1SearchKey").value=tempKey;
+		document.top1SearchForm.submit();
+ 	}
+ }
+ 
+ function getAjaxRequest() {
+	var xmlreq = false;
+	if (window.XMLHttpRequest) {
+		xmlreq = new XMLHttpRequest();
+	} else if (window.ActiveXObject) {
+		try {
+			xmlreq = new ActiveXObject("Msxml2.XMLHTTP");
+		} catch (e1) {
+			try {
+				xmlreq = new ActiveXObject("Microsoft.XMLHTTP");
+			} catch (e2) {}
+		}
+	}
+	return xmlreq;
+}
+
+
+function getLoginState(url,parm) {
+		var req = getAjaxRequest();
+		var handlerFunction = getReadyLoginState(req);
+	req.onreadystatechange = handlerFunction;
+		req.open("GET", url, true);
+		req.setRequestHeader("Content-Type",
+	"application/x-www-form-urlencoded");
+		//alert(parm);
+		req.send(parm);
+}
+
+function getReadyLoginState(req) {
+	return function () {
+		if (req.readyState == 4) {
+			if (req.status == 200) {
+				var s = "";
+				var state = req.responseText;
+				state = state.replace("\n","");
+				if(state!=""){
+					s = "您好，"+state+" ！";
+					//s += " <a  href='/module/login/logout.jsp'>退出</a>";
+					s +='&nbsp;'+'<a id="outBackUrl" target="_parent"  href="javascript:void(0)";>退出</a>'
+					document.getElementById("checkloginstate").innerHTML = s;
+					//document.getElementById("outBackUrl").href="/module/login/loginout.jsp?backUrl="+location.href;
+					document.getElementById("outBackUrl").href="/module/login/logout.jsp?backUrl="+location.href;
+				}
+			}
+		} 
+	}
+}
+ </script>
+<tbody><tr>
+<td height="35" valign="top">
+ <form action="/module/lsearch/lsearchindexp.jsp" method="post" name="frm">
+ <input type="hidden" id="leibie" name="leibie" value="0">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tbody><tr>
+                <td align="right" valign="top" class="linkf12_whlie1 f12_whlie2 pad_t12"><span id="checkloginstate"><a id="backUrl" href="http://ticket.chncpa.org/fg/user/user.do?actionType=gologin&amp;requestPageUrl=http://www.chncpa.org/ycgp/jmxx/2013-09-12/864170.shtml">登录</a>/<a href="http://ticket.chncpa.org/fg/user/userreg.do?actionType=regsetp1&amp;requestLoginPageUrl=" +location.href="">注册</a></span>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://ticket.chncpa.org/fg/order/cart.do?actionType=list">购物车</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="javascript:window.external.AddFavorite('http://www.chncpa.org','国家大剧院')">收藏</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://ticket.chncpa.org/usercenter/usercenter.jsp">我的大剧院</a></td>
+                
+				<script>
+				document.getElementById("backUrl").href="http://ticket.chncpa.org/fg/user/user.do?actionType=gologin&requestPageUrl="+location.href;
+				</script>
+				<td width="85" align="right" valign="top" class="linkf12_Orange f12_Orange pad_t10">|&nbsp;&nbsp;<a href="/ens/" target="_blank"><span class="font_weg">ENGLISH</span></a></td>
+				
+				<td width="203" height="35" align="right">
+				
+					<input type="text" name="key" id="key" class="text_inp2"></td>
+				<td width="32" height="35" align="center"><a href="javascript:document.frm.submit();"><img src="/templates/images/search.gif" width="11" height="11" border="0"></a></td>
+              </tr>
+</tbody></table>
+</form>
+<script language="javascript">
+getLoginState("/module/login/loginstate.jsp?timestamp="+Math.random(),"");
+</script>
+</td>
+</tr>
+
+      <tr>
+        <td align="center" valign="top" class="bot_bg1">
+		  <table width="100%" border="0" cellspacing="0" cellpadding="0" class="top_bg4">
+		  <tbody><tr>
+			  <td height="142" align="center" valign="top">
+			   <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody><tr>
+    <td valign="top" align="center"><img src="/templates/images/top_logo.jpg" width="1003" height="142" border="0" usemap="#Map3"></td>
+  </tr>
+</tbody></table>
+<!--=======logo返回首页链接======-->
+<map name="Map3" id="Map3">
+<area shape="rect" coords="26,30,131,111" href="/">
+</map>
+
+			 
+</td>
+			 </tr>
+            <tr>
+              <td align="center" valign="top">
+			  <script src="/templates/inc/nav.js"></script>
+<script language="javascript">
+
+var channelStr="266,0,首页,/shouye/index.shtml,;206681,266,视频,/shouye/spyc/index.shtml,;191,0,演出购票,/ycgp/index.shtml,;11419,191,演出安排,/ycgp/ycap/index.shtml,;54506,191,2013秋季演出季,/Autumn_Season_2013.pdf,;201,191,特别推荐,/ycgp/tbtj/index.shtml,;13737,191,购票指南,/bzzx/gkyc/2011-03-05/53808.shtml,;13293,191,场馆座位图,/ycgp/cgzwt/index.shtml,;206,191,优惠专区,/ycgp/yhhd/index.shtml,;13354,191,大客户购票,/bzzx/gkyc/2011-03-10/55485.shtml,;192,0,艺术普及,/yspj/index.shtml,;208,192,周末音乐会,/yspj/zmyyh/index.shtml,;209,192,经典艺术讲堂,/yspj/jdysjt/index.shtml,;210,192,走进唱片里的世界,/yspj/zjcpldsj/index.shtml,;213,192,艺术资料中心,/yspj/yszlzx/index.shtml,;193,0,参观游览,/cgyl/index.shtml,;214,193,剧院景观,/cgyl/jyjg/index.shtml,;216,193,艺术展览,/cgyl/yszl/index.shtml,;218,193,艺术精品长廊,/cgyl/ysjpcl/index.shtml,;220,193,餐饮服务,/cgyl/cyfw/index.shtml,;34444,193,参观导览图,/cgyl/ccgltlink/index.shtml,;34455,193,参观须知,/cgyl/cgxxlink/index.shtml,;34529,193,参观购票,/cgyl/cggklink/index.shtml,;194,0,资讯动态,/cxdt/index.shtml,;75478,194,剧院新闻,/cxdt/juyuannews/index.shtml,;224,194,媒体视角,/cxdt/mtsj/index.shtml,;196,0,艺术交流,/ysjl/index.shtml,;23372,196,艺术交流活动,/ysjl/ysjlhd/index.shtml,;235,196,友好机构,/ysjl/hzysjg/index.shtml,;237,196,世界歌剧院发展论坛,/ysjl/gjjygflt/index.shtml,;22953,196,世界音乐博览,/ysjl/sjyybl/index.shtml,;29419,196,交流简讯,/ysjl/jlzx/index.shtml,;197,0,剧院概览,/jygl/index.shtml,;247,197,发展宗旨愿景,/jygl/fzzzyj/index.shtml,;23406,197,核心价值理念,/jygl/fzzzyj/hxjzln/index.shtml,;23412,197,剧院运营,/jygl/fzzzyj/yyygl/index.shtml,;22986,197,剧院建筑,/jygl/jyjz/index.shtml,;251,197,剧院足迹,/jygl/jyzj/index.shtml,;267,0,古典音乐频道,/gdyypd/index.shtml,;201416,267,NCPA音乐厅,http://classic.chncpa.org/ncpa/index.shtml,;201417,267,排练现场,http://classic.chncpa.org/plxc/index.shtml,;452114,267,NCPA纪录,http://classic.chncpa.org/jilu/index.shtml,;201418,267,古典音乐赏析,http://classic.chncpa.org/gdyysx/index.shtml,;201419,267,音乐虫聊天室,http://classic.chncpa.org/clt/index.shtml,;199,0,会员俱乐部,/hyjlb/index.shtml,;22878,199,会员活动,/hyjlb/hyhd/index.shtml,;22880,199,入会指南,/bzzx/hyjlb/2011-03-06/54268.shtml,;29348,0,咨询搜索关键字,/zxssgjz/index.shtml,;54470,0,热点聚焦,/rdjjyc/index.shtml,;66205,0,剧目生产,/jmscyj/index.shtml,;66947,66205,院藏剧目,/jmscyj/ycjm/index.shtml,;66951,66205,驻院团体,/jmscyj/zytt/index.shtml,;67758,0,赞助与回报,/zzyhb/index.shtml,;67763,67758,合作项目及回报,/zzyhb/hzxmyhb/index.shtml,;67764,67758,合作伙伴,/zzyhb/hzhb/index.shtml,;206973,0,关键字,/guanjianzi/index.shtml,";
+
+</script>
+<script type="text/JavaScript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+MM_swapImgRestore();
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+
+
+
+<table width="983" border="0" cellpadding="0" cellspacing="0">          
+          <tbody><tr>
+            <td valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tbody><tr>
+                <td height="31" align="left" valign="top">
+				<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody><tr>
+    <td class="lmpdbg" valign="top" align="left"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tbody><tr>
+        <td width="3"></td>
+        <td width="59" height="31" align="left" valign="top">
+        <a name="topnav" href="/" onmouseover="MM_swapImage('Image11','','/templates/images/lmpd/sy_off.jpg',1);popSenMenu(this,'266',0);" onmouseout="leaveSenMenu('266');"><img src="/templates/images/lmpd/sy_on.jpg" name="Image11" width="52" height="31" border="0" id="Image11"></a>
+                    <div id="266" style="z-index:2;display:none; POSITION: absolute; top:208px !important;" onmouseover="showSenMenu(this)" onmouseout="hideSenMenu(this)"></div></td>
+        <td width="86" height="31" align="left" valign="top">
+        <a name="topnav" href="/ycgp/index.shtml" onmouseover="MM_swapImage('Image1','','/templates/images/lmpd/ycgp_off.jpg',1);popSenMenu(this,'191',0);" onmouseout="leaveSenMenu('191');"><img src="/templates/images/lmpd/ycgp_off.jpg" name="Image1" width="79" height="31" border="0" id="Image1"></a>
+                    <div id="191" style="z-index:2;display:none; POSITION: absolute; top:208px !important;" onmouseover="showSenMenu(this)" onmouseout="hideSenMenu(this)"><table class="er_cd" id="bg_2"><tbody><tr><td nowrap="nowrap"><a id="menu_11419" href="/ycgp/ycap/index.shtml" onmouseover="popMenu(this,'11419')" onmouseout="leaveMenu('11419')">演出安排</a><div id="11419" style="z-index:2;display:none; POSITION: absolute;" onmouseover="showSubMenu(this)" onmouseout="hideSubMenu(this)"><div class="sj_cd"></div></div></td><td nowrap="nowrap"><a id="menu_54506" href="/Autumn_Season_2013.pdf" onmouseover="popMenu(this,'54506')" onmouseout="leaveMenu('54506')">2013秋季演出季</a><div id="54506" style="z-index:2;display:none; POSITION: absolute;" onmouseover="showSubMenu(this)" onmouseout="hideSubMenu(this)"><div class="sj_cd"></div></div></td><td nowrap="nowrap"><a id="menu_201" href="/ycgp/tbtj/index.shtml" onmouseover="popMenu(this,'201')" onmouseout="leaveMenu('201')">特别推荐</a><div id="201" style="z-index:2;display:none; POSITION: absolute;" onmouseover="showSubMenu(this)" onmouseout="hideSubMenu(this)"><div class="sj_cd"></div></div></td><td nowrap="nowrap"><a id="menu_13737" href="/bzzx/gkyc/2011-03-05/53808.shtml" onmouseover="popMenu(this,'13737')" onmouseout="leaveMenu('13737')">购票指南</a><div id="13737" style="z-index:2;display:none; POSITION: absolute;" onmouseover="showSubMenu(this)" onmouseout="hideSubMenu(this)"><div class="sj_cd"></div></div></td><td nowrap="nowrap"><a id="menu_13293" href="/ycgp/cgzwt/index.shtml" onmouseover="popMenu(this,'13293')" onmouseout="leaveMenu('13293')">场馆座位图</a><div id="13293" style="z-index:2;display:none; POSITION: absolute;" onmouseover="showSubMenu(this)" onmouseout="hideSubMenu(this)"><div class="sj_cd"></div></div></td><td nowrap="nowrap"><a id="menu_206" href="/ycgp/yhhd/index.shtml" onmouseover="popMenu(this,'206')" onmouseout="leaveMenu('206')">优惠专区</a><div id="206" style="z-index:2;display:none; POSITION: absolute;" onmouseover="showSubMenu(this)" onmouseout="hideSubMenu(this)"><div class="sj_cd"></div></div></td><td nowrap="nowrap"><a id="menu_13354" href="/bzzx/gkyc/2011-03-10/55485.shtml" onmouseover="popMenu(this,'13354')" onmouseout="leaveMenu('13354')">大客户购票</a><div id="13354" style="z-index:2;display:none; POSITION: absolute;" onmouseover="showSubMenu(this)" onmouseout="hideSubMenu(this)"><div class="sj_cd"></div></div></td></tr></tbody></table></div></td>
+                    
+                    <td width="115" height="31" align="left" valign="top"><a name="topnav" href="http://classic.chncpa.org" target="_blank" onmouseover="MM_swapImage('Image12','','/templates/images/lmpd/gdyypd_off.jpg',1);popSenMenu(this,'267',0);" onmouseout="leaveSenMenu('267');"><img src="/templates/images/lmpd/gdyypd_on.jpg" name="Image12" width="108" height="31" border="0" id="Image12"></a>
+                    <div id="267" style="z-index:2;display:none; POSITION: absolute; top:208px !important;" onmouseover="showSenMenu(this)" onmouseout="hideSenMenu(this)"><table class="er_cd" id="bg_2"><tbody><tr><td nowrap="nowrap"><a id="menu_201416" href="http://classic.chncpa.org/ncpa/index.shtml" onmouseover="popMenu(this,'201416')" onmouseout="leaveMenu('201416')">NCPA音乐厅</a><div id="201416" style="z-index:2;display:none; POSITION: absolute;" onmouseover="showSubMenu(this)" onmouseout="hideSubMenu(this)"><div class="sj_cd"></div></div></td><td nowrap="nowrap"><a id="menu_201417" href="http://classic.chncpa.org/plxc/index.shtml" onmouseover="popMenu(this,'201417')" onmouseout="leaveMenu('201417')">排练现场</a><div id="201417" style="z-index:2;display:none; POSITION: absolute;" onmouseover="showSubMenu(this)" onmouseout="hideSubMenu(this)"><div class="sj_cd"></div></div></td><td nowrap="nowrap"><a id="menu_452114" href="http://classic.chncpa.org/jilu/index.shtml" onmouseover="popMenu(this,'452114')" onmouseout="leaveMenu('452114')">NCPA纪录</a><div id="452114" style="z-index:2;display:none; POSITION: absolute;" onmouseover="showSubMenu(this)" onmouseout="hideSubMenu(this)"><div class="sj_cd"></div></div></td><td nowrap="nowrap"><a id="menu_201418" href="http://classic.chncpa.org/gdyysx/index.shtml" onmouseover="popMenu(this,'201418')" onmouseout="leaveMenu('201418')">古典音乐赏析</a><div id="201418" style="z-index:2;display:none; POSITION: absolute;" onmouseover="showSubMenu(this)" onmouseout="hideSubMenu(this)"><div class="sj_cd"></div></div></td><td nowrap="nowrap"><a id="menu_201419" href="http://classic.chncpa.org/clt/index.shtml" onmouseover="popMenu(this,'201419')" onmouseout="leaveMenu('201419')">音乐虫聊天室</a><div id="201419" style="z-index:2;display:none; POSITION: absolute;" onmouseover="showSubMenu(this)" onmouseout="hideSubMenu(this)"><div class="sj_cd"></div></div></td></tr></tbody></table></div></td>
+                    
+        <td width="88" height="31" align="left" valign="top"><a name="topnav" href="/jmscyj/index.shtml" onmouseover="MM_swapImage('Image2','','/templates/images/lmpd/jmsc_off.jpg',1);popSenMenu(this,'66205',0);" onmouseout="leaveSenMenu('66205');"><img src="/templates/images/lmpd/jmsc_on.jpg" name="Image2" width="81" height="31" border="0" id="Image2"></a>
+                      <div id="66205" style="z-index:2;display:none; POSITION: absolute; top:208px !important;" onmouseover="showSenMenu(this)" onmouseout="hideSenMenu(this)"><table class="er_cd" id="bg_2"><tbody><tr><td nowrap="nowrap"><a id="menu_66947" href="/jmscyj/ycjm/index.shtml" onmouseover="popMenu(this,'66947')" onmouseout="leaveMenu('66947')">院藏剧目</a><div id="66947" style="z-index:2;display:none; POSITION: absolute;" onmouseover="showSubMenu(this)" onmouseout="hideSubMenu(this)"><div class="sj_cd"></div></div></td><td nowrap="nowrap"><a id="menu_66951" href="/jmscyj/zytt/index.shtml" onmouseover="popMenu(this,'66951')" onmouseout="leaveMenu('66951')">驻院团体</a><div id="66951" style="z-index:2;display:none; POSITION: absolute;" onmouseover="showSubMenu(this)" onmouseout="hideSubMenu(this)"><div class="sj_cd"></div></div></td></tr></tbody></table></div></td>
+        <td width="86" height="31" align="left" valign="top"><a name="topnav" href="/yspj/index.shtml" onmouseover="MM_swapImage('Image3','','/templates/images/lmpd/yspj_off.jpg',1);popSenMenu(this,'192',0);" onmouseout="leaveSenMenu('192');"><img src="/templates/images/lmpd/yspj_on.jpg" name="Image3" width="79" height="31" border="0" id="Image3"></a>
+                    <div id="192" style="z-index:2;display:none; POSITION: absolute; top:208px !important;" onmouseover="showSenMenu(this)" onmouseout="hideSenMenu(this)"><table class="er_cd" id="bg_2"><tbody><tr><td nowrap="nowrap"><a id="menu_208" href="/yspj/zmyyh/index.shtml" onmouseover="popMenu(this,'208')" onmouseout="leaveMenu('208')">周末音乐会</a><div id="208" style="z-index:2;display:none; POSITION: absolute;" onmouseover="showSubMenu(this)" onmouseout="hideSubMenu(this)"><div class="sj_cd"></div></div></td><td nowrap="nowrap"><a id="menu_209" href="/yspj/jdysjt/index.shtml" onmouseover="popMenu(this,'209')" onmouseout="leaveMenu('209')">经典艺术讲堂</a><div id="209" style="z-index:2;display:none; POSITION: absolute;" onmouseover="showSubMenu(this)" onmouseout="hideSubMenu(this)"><div class="sj_cd"></div></div></td><td nowrap="nowrap"><a id="menu_210" href="/yspj/zjcpldsj/index.shtml" onmouseover="popMenu(this,'210')" onmouseout="leaveMenu('210')">走进唱片里的世界</a><div id="210" style="z-index:2;display:none; POSITION: absolute;" onmouseover="showSubMenu(this)" onmouseout="hideSubMenu(this)"><div class="sj_cd"></div></div></td><td nowrap="nowrap"><a id="menu_213" href="/yspj/yszlzx/index.shtml" onmouseover="popMenu(this,'213')" onmouseout="leaveMenu('213')">艺术资料中心</a><div id="213" style="z-index:2;display:none; POSITION: absolute;" onmouseover="showSubMenu(this)" onmouseout="hideSubMenu(this)"><div class="sj_cd"></div></div></td></tr></tbody></table></div></td>
+        <td width="87" height="31" align="left" valign="top"><a name="topnav" href="/cgyl/index.shtml" onmouseover="MM_swapImage('Image4','','/templates/images/lmpd/cgyl_off.jpg',1);popSenMenu(this,'193',-150);" onmouseout="leaveSenMenu('193');"><img src="/templates/images/lmpd/cgyl_on.jpg" name="Image4" width="80" height="31" border="0" id="Image4"></a>
+                    <div id="193" style="z-index:2;display:none; POSITION: absolute; top:208px !important;" onmouseover="showSenMenu(this)" onmouseout="hideSenMenu(this)"><table class="er_cd" id="bg_2"><tbody><tr><td nowrap="nowrap"><a id="menu_214" href="/cgyl/jyjg/index.shtml" onmouseover="popMenu(this,'214')" onmouseout="leaveMenu('214')">剧院景观</a><div id="214" style="z-index:2;display:none; POSITION: absolute;" onmouseover="showSubMenu(this)" onmouseout="hideSubMenu(this)"><div class="sj_cd"></div></div></td><td nowrap="nowrap"><a id="menu_216" href="/cgyl/yszl/index.shtml" onmouseover="popMenu(this,'216')" onmouseout="leaveMenu('216')">艺术展览</a><div id="216" style="z-index:2;display:none; POSITION: absolute;" onmouseover="showSubMenu(this)" onmouseout="hideSubMenu(this)"><div class="sj_cd"></div></div></td><td nowrap="nowrap"><a id="menu_218" href="/cgyl/ysjpcl/index.shtml" onmouseover="popMenu(this,'218')" onmouseout="leaveMenu('218')">艺术精品长廊</a><div id="218" style="z-index:2;display:none; POSITION: absolute;" onmouseover="showSubMenu(this)" onmouseout="hideSubMenu(this)"><div class="sj_cd"></div></div></td><td nowrap="nowrap"><a id="menu_220" href="/cgyl/cyfw/index.shtml" onmouseover="popMenu(this,'220')" onmouseout="leaveMenu('220')">餐饮服务</a><div id="220" style="z-index:2;display:none; POSITION: absolute;" onmouseover="showSubMenu(this)" onmouseout="hideSubMenu(this)"><div class="sj_cd"></div></div></td><td nowrap="nowrap"><a id="menu_34444" href="/cgyl/ccgltlink/index.shtml" onmouseover="popMenu(this,'34444')" onmouseout="leaveMenu('34444')">参观导览图</a><div id="34444" style="z-index:2;display:none; POSITION: absolute;" onmouseover="showSubMenu(this)" onmouseout="hideSubMenu(this)"><div class="sj_cd"></div></div></td><td nowrap="nowrap"><a id="menu_34455" href="/cgyl/cgxxlink/index.shtml" onmouseover="popMenu(this,'34455')" onmouseout="leaveMenu('34455')">参观须知</a><div id="34455" style="z-index:2;display:none; POSITION: absolute;" onmouseover="showSubMenu(this)" onmouseout="hideSubMenu(this)"><div class="sj_cd"></div></div></td><td nowrap="nowrap"><a id="menu_34529" href="/cgyl/cggklink/index.shtml" onmouseover="popMenu(this,'34529')" onmouseout="leaveMenu('34529')">参观购票</a><div id="34529" style="z-index:2;display:none; POSITION: absolute;" onmouseover="showSubMenu(this)" onmouseout="hideSubMenu(this)"><div class="sj_cd"></div></div></td></tr></tbody></table></div></td>
+        <td width="87" height="31" align="left" valign="top"><a name="topnav" href="/cxdt/index.shtml" onmouseover="MM_swapImage('Image5','','/templates/images/lmpd/zxdt_off.jpg',1);popSenMenu(this,'194',-25);" onmouseout="leaveSenMenu('194');"><img src="/templates/images/lmpd/zxdt_on.jpg" name="Image5" width="80" height="31" border="0" id="Image5"></a>
+                    <div id="194" style="z-index:2;display:none; POSITION: absolute; top:208px !important;" onmouseover="showSenMenu(this)" onmouseout="hideSenMenu(this)"><table class="er_cd" id="bg_2"><tbody><tr><td nowrap="nowrap"><a id="menu_75478" href="/cxdt/juyuannews/index.shtml" onmouseover="popMenu(this,'75478')" onmouseout="leaveMenu('75478')">剧院新闻</a><div id="75478" style="z-index:2;display:none; POSITION: absolute;" onmouseover="showSubMenu(this)" onmouseout="hideSubMenu(this)"><div class="sj_cd"></div></div></td><td nowrap="nowrap"><a id="menu_224" href="/cxdt/mtsj/index.shtml" onmouseover="popMenu(this,'224')" onmouseout="leaveMenu('224')">媒体视角</a><div id="224" style="z-index:2;display:none; POSITION: absolute;" onmouseover="showSubMenu(this)" onmouseout="hideSubMenu(this)"><div class="sj_cd"></div></div></td></tr></tbody></table></div></td>
+        <td width="86" height="31" align="left" valign="top"><a name="topnav" href="/ysjl/index.shtml" onmouseover="MM_swapImage('Image6','','/templates/images/lmpd/ysjl_off.jpg',1);popSenMenu(this,'196',-180);" onmouseout="leaveSenMenu('196');"><img src="/templates/images/lmpd/ysjl_on.jpg" name="Image6" width="79" height="31" border="0" id="Image6"></a>
+                    <div id="196" style="z-index:2;display:none; POSITION: absolute; top:208px !important;" onmouseover="showSenMenu(this)" onmouseout="hideSenMenu(this)"><table class="er_cd" id="bg_2"><tbody><tr><td nowrap="nowrap"><a id="menu_23372" href="/ysjl/ysjlhd/index.shtml" onmouseover="popMenu(this,'23372')" onmouseout="leaveMenu('23372')">艺术交流活动</a><div id="23372" style="z-index:2;display:none; POSITION: absolute;" onmouseover="showSubMenu(this)" onmouseout="hideSubMenu(this)"><div class="sj_cd"></div></div></td><td nowrap="nowrap"><a id="menu_235" href="/ysjl/hzysjg/index.shtml" onmouseover="popMenu(this,'235')" onmouseout="leaveMenu('235')">友好机构</a><div id="235" style="z-index:2;display:none; POSITION: absolute;" onmouseover="showSubMenu(this)" onmouseout="hideSubMenu(this)"><div class="sj_cd"></div></div></td><td nowrap="nowrap"><a id="menu_237" href="/ysjl/gjjygflt/index.shtml" onmouseover="popMenu(this,'237')" onmouseout="leaveMenu('237')">世界歌剧院发展论坛</a><div id="237" style="z-index:2;display:none; POSITION: absolute;" onmouseover="showSubMenu(this)" onmouseout="hideSubMenu(this)"><div class="sj_cd"></div></div></td><td nowrap="nowrap"><a id="menu_22953" href="/ysjl/sjyybl/index.shtml" onmouseover="popMenu(this,'22953')" onmouseout="leaveMenu('22953')">世界音乐博览</a><div id="22953" style="z-index:2;display:none; POSITION: absolute;" onmouseover="showSubMenu(this)" onmouseout="hideSubMenu(this)"><div class="sj_cd"></div></div></td><td nowrap="nowrap"><a id="menu_29419" href="/ysjl/jlzx/index.shtml" onmouseover="popMenu(this,'29419')" onmouseout="leaveMenu('29419')">交流简讯</a><div id="29419" style="z-index:2;display:none; POSITION: absolute;" onmouseover="showSubMenu(this)" onmouseout="hideSubMenu(this)"><div class="sj_cd"></div></div></td></tr></tbody></table></div></td>
+        <td width="102" height="31" align="left" valign="top"><a name="topnav" href="/hyjlb/index.shtml" onmouseover="MM_swapImage('Image8','','/templates/images/lmpd/hyjlb_off.jpg',1);popSenMenu(this,'199',-55);" onmouseout="leaveSenMenu('199');"><img src="/templates/images/lmpd/hyjlb_on.jpg" name="Image8" width="95" height="31" border="0" id="Image8"></a>
+                      <div id="199" style="z-index:2;display:none; POSITION: absolute; top:208px !important;" onmouseover="showSenMenu(this)" onmouseout="hideSenMenu(this)"><table class="er_cd" id="bg_2"><tbody><tr><td nowrap="nowrap"><a id="menu_22878" href="/hyjlb/hyhd/index.shtml" onmouseover="popMenu(this,'22878')" onmouseout="leaveMenu('22878')">会员活动</a><div id="22878" style="z-index:2;display:none; POSITION: absolute;" onmouseover="showSubMenu(this)" onmouseout="hideSubMenu(this)"><div class="sj_cd"></div></div></td><td nowrap="nowrap"><a id="menu_22880" href="/bzzx/hyjlb/2011-03-06/54268.shtml" onmouseover="popMenu(this,'22880')" onmouseout="leaveMenu('22880')">入会指南</a><div id="22880" style="z-index:2;display:none; POSITION: absolute;" onmouseover="showSubMenu(this)" onmouseout="hideSubMenu(this)"><div class="sj_cd"></div></div></td></tr></tbody></table></div></td>
+        <td width="86" height="31" align="left" valign="top"><a name="topnav" href="/jygl/index.shtml" onmouseover="MM_swapImage('Image9','','/templates/images/lmpd/jygl_off.jpg',1);popSenMenu(this,'197',-205);" onmouseout="leaveSenMenu('197');"><img src="/templates/images/lmpd/jygl_on.jpg" name="Image9" width="79" height="31" border="0" id="Image9"></a>
+                    <div id="197" style="z-index:2;display:none; POSITION: absolute; top:208px !important;" onmouseover="showSenMenu(this)" onmouseout="hideSenMenu(this)"><table class="er_cd" id="bg_2"><tbody><tr><td nowrap="nowrap"><a id="menu_247" href="/jygl/fzzzyj/index.shtml" onmouseover="popMenu(this,'247')" onmouseout="leaveMenu('247')">发展宗旨愿景</a><div id="247" style="z-index:2;display:none; POSITION: absolute;" onmouseover="showSubMenu(this)" onmouseout="hideSubMenu(this)"><div class="sj_cd"></div></div></td><td nowrap="nowrap"><a id="menu_23406" href="/jygl/fzzzyj/hxjzln/index.shtml" onmouseover="popMenu(this,'23406')" onmouseout="leaveMenu('23406')">核心价值理念</a><div id="23406" style="z-index:2;display:none; POSITION: absolute;" onmouseover="showSubMenu(this)" onmouseout="hideSubMenu(this)"><div class="sj_cd"></div></div></td><td nowrap="nowrap"><a id="menu_23412" href="/jygl/fzzzyj/yyygl/index.shtml" onmouseover="popMenu(this,'23412')" onmouseout="leaveMenu('23412')">剧院运营</a><div id="23412" style="z-index:2;display:none; POSITION: absolute;" onmouseover="showSubMenu(this)" onmouseout="hideSubMenu(this)"><div class="sj_cd"></div></div></td><td nowrap="nowrap"><a id="menu_22986" href="/jygl/jyjz/index.shtml" onmouseover="popMenu(this,'22986')" onmouseout="leaveMenu('22986')">剧院建筑</a><div id="22986" style="z-index:2;display:none; POSITION: absolute;" onmouseover="showSubMenu(this)" onmouseout="hideSubMenu(this)"><div class="sj_cd"></div></div></td><td nowrap="nowrap"><a id="menu_251" href="/jygl/jyzj/index.shtml" onmouseover="popMenu(this,'251')" onmouseout="leaveMenu('251')">剧院足迹</a><div id="251" style="z-index:2;display:none; POSITION: absolute;" onmouseover="showSubMenu(this)" onmouseout="hideSubMenu(this)"><div class="sj_cd"></div></div></td></tr></tbody></table></div></td>
+        <td height="31" align="left" valign="top"><a name="topnav" href="/zzyhb/index.shtml" onmouseover="MM_swapImage('Image10','','/templates/images/lmpd/zzyhb_off.jpg',1);popSenMenu(this,'67758',-70);" onmouseout="leaveSenMenu('67758');"><img src="/templates/images/lmpd/zzyhb_on.jpg" name="Image10" width="95" height="31" border="0" id="Image10"></a>
+                    <div id="67758" style="z-index:2;display:none; POSITION: absolute; top:208px !important;" onmouseover="showSenMenu(this)" onmouseout="hideSenMenu(this)"><table class="er_cd" id="bg_2"><tbody><tr><td nowrap="nowrap"><a id="menu_67763" href="/zzyhb/hzxmyhb/index.shtml" onmouseover="popMenu(this,'67763')" onmouseout="leaveMenu('67763')">合作项目及回报</a><div id="67763" style="z-index:2;display:none; POSITION: absolute;" onmouseover="showSubMenu(this)" onmouseout="hideSubMenu(this)"><div class="sj_cd"></div></div></td><td nowrap="nowrap"><a id="menu_67764" href="/zzyhb/hzhb/index.shtml" onmouseover="popMenu(this,'67764')" onmouseout="leaveMenu('67764')">合作伙伴</a><div id="67764" style="z-index:2;display:none; POSITION: absolute;" onmouseover="showSubMenu(this)" onmouseout="hideSubMenu(this)"><div class="sj_cd"></div></div></td></tr></tbody></table></div></td>
+      </tr>
+    </tbody></table></td>
+  </tr>
+  <tr>
+    <td height="30">&nbsp;</td>
+  </tr>
+</tbody></table>
+
+				</td>
+              </tr>
+         <!--?-->
+            </tbody></table></td>
+          </tr>
+</tbody></table>
+  <script language="javascript">
+		var curhref = document.location.href;
+		if(curhref.indexOf("/ycgp/")>0){
+			MM_swapImage('Image1','','/templates/images/lmpd/ycgp_off.jpg',1);
+		}
+		if(curhref.indexOf("/jmscyj/")>0){
+			MM_swapImage('Image2','','/templates/images/lmpd/jmsc_off.jpg',1);
+		}
+		if(curhref.indexOf("/yspj/")>0){
+			MM_swapImage('Image3','','/templates/images/lmpd/yspj_off.jpg',1);
+		}
+		if(curhref.indexOf("/cgyl/")>0){
+			MM_swapImage('Image4','','/templates/images/lmpd/cgyl_off.jpg',1);
+		}
+		if(curhref.indexOf("/cxdt/")>0){
+			MM_swapImage('Image5','','/templates/images/lmpd/zxdt_off.jpg',1);
+		}
+		if(curhref.indexOf("/ysjl/")>0){
+			MM_swapImage('Image6','','/templates/images/lmpd/ysjl_off.jpg',1);
+		}
+		if(curhref.indexOf("/hyjlb/")>0){
+			MM_swapImage('Image8','','/templates/images/lmpd/hyjlb_off.jpg',1);
+		}
+		if(curhref.indexOf("/jygl/")>0){
+			MM_swapImage('Image9','','/templates/images/lmpd/jygl_off.jpg',1);
+		}
+		if(curhref.indexOf("/zzyhb/")>0){
+			MM_swapImage('Image10','','/templates/images/lmpd/zzyhb_off.jpg',1);
+		}
+		if(curhref.indexOf("/gdyypd/")>0){
+			MM_swapImage('Image12','','/templates/images/lmpd/gdyypd_off.jpg',1);
+		}
+ 
+		//alert(curhref);
+  </script>
+		<script language="javascript">
+		var menuCidStr = "191,66205,192,193,194,196,197,199,67758,267";
+		getShowMenu(menuCidStr)
+		</script>
+
+          <table width="983" border="0" cellspacing="0" cellpadding="0">
+  <tbody><tr>
+     <td height="31" align="left" class="pad_left16 f12_whlie1 linkf12_whlie2 dq_bg"><a href="/">首页</a>&nbsp;&gt;&nbsp;<a href="/ycgp/index.shtml" class="">演出购票</a> &gt; 剧目信息</td>
+
+  </tr>
+  <tr>
+    <td valign="top">
+	  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tbody><tr>
+        <td width="755" align="left" valign="top" class="xwzx_bg">
+		
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tbody><tr>
+            <td align="left" valign="top" class="xwzx_bg"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tbody><tr>
+                <td width="439" height="302" class="pad_left11 pad_t11"><img id="performanceImage" src="/module/performancemanager/manager/images/titleimg/1301293562687.jpg" width="424" height="303"></td>
+                <td width="305" align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tbody><tr>
+				   <td height="313" valign="top">
+				   <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody><tr>
+    <td height="275" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tbody><tr>
+                    <td valign="top">
+					<table width="100%" border="0" cellspacing="0" cellpadding="0" class="mar_t15">
+                      <tbody><tr>
+                        <td height="50" align="left" valign="top" class="f14b_black line_h24">国家大剧院制作乔治·比才歌剧《卡门》</td>
+                      </tr>
+                    </tbody></table></td>
+                  </tr>
+                  <tr>
+                    <td align="left"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tbody><tr>
+                        <td width="65" height="24" align="left" class="f12_black1 font_weg">演出剧场：</td>
+                        <td height="24" align="left" class="linkf12_blue1">歌剧院</td>
+                      </tr>
+                      <tr>
+                        <td width="65" height="24" align="left" class="f12_black1 font_weg">演出时间：</td>
+                        <td height="24" align="left">
+						<span style="height:24px; line-height:24px; display:block; float:left;"><script language="javascript">document.write(jtDate);</script>2013.12.20-2013.12.23
+						<script language="javascript">
+				  		var lastDate = "";
+				 		if(jtDate.indexOf("-") != -1){
+							lastDate = jtDate.split("-")[1];
+						}else{
+							lastDate = jtDate;
+						}
+				 		</script></span><span style="padding-left:5px; height:20px; line-height:20px; display:block; float:left; padding-top:4px;"><a href="#ytop"><img src="/templates/images/ycsj_ioc.jpg" width="16" height="14" border="0"></a></span>
+						</td>
+                      </tr>
+                      <tr id="yc">
+                        <td width="65" height="24" align="left" class="f12_black1 font_weg">演出时长：</td>
+                        <td height="24" align="left">约170分钟&nbsp;包含中场</td>
+                      </tr>
+					  <script language="javascript">
+					  if("170"==""||"170"=="0"){
+					  	document.getElementById("yc").style.display="none";
+					  }
+					  </script>
+                      <tr id="ycpjTr">
+                        <td width="65" align="left" valign="top" class="f12_black1 font_weg pad_t5" id="ycpjTd">演出票价：</td>
+                        <td align="left" valign="top" id="ycpjTd" class="pad_t5">
+						<span id="ycpjShow">VIP/680/600/550/450/280/220/160元</span>
+						<script language="javascript">
+						 var ycpjValue = 'VIP/680/600/550/450/280/220/160元';
+						 var ycpjShow = document.getElementById("ycpjShow");
+						 if(ycpjValue == ""){
+						 	document.getElementById("ycpjTd").style.display='none';
+						 }else{
+						    ycpjValue = ycpjValue.replace(/\s/g,"<br>");
+						 	ycpjShow.innerHTML = ycpjValue;
+						 }
+						</script></td>
+                      </tr>
+					  <script language="javascript">
+					  	var ycpjTd = document.getElementById("ycpjTd").innerText;
+						if(ycpjTd.replace(/\s/g,"") == ""){
+							document.getElementById("ycpjTr").style.display="none";
+						}
+					  </script>
+                    </tbody></table></td>
+                  </tr>
+                  <tr>
+                    <td align="left">
+
+					<div id="topTicketDiv" style="display:none;">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody><tr>
+    <td width="46" height="30" align="left"><a href="javascript:void(0)"><img src="/templates/images/button/but_yjs.gif" name="wkp1" border="0" id="wkp1"></a></td>
+    <td width="68" height="30" align="left" class="linkf12_blue1">
+
+    <a href="/ycgp/cgzwt/index.shtml"><img src="/templates/images/button/button_viewsit_on.jpg" border="0"></a>&nbsp; </td>
+	
+
+    <td width="131" height="30" align="left" class="linkf12_blue1">
+	
+				
+
+	
+	
+	
+
+	</td>
+  </tr>
+</tbody></table>
+					</div>
+					
+					<div id="ifload1" align="center" style="display: none; ">数据加载中...</div>
+					<iframe id="topIframe" frameborder="0" scrolling="no" style="width:100%;max-height:60px" src="http://ticket.chncpa.org/product.jsp?productId=864170"></iframe>	
+					
+					</td>
+                  </tr>
+<script language="javascript">
+						function getifLoad1(iframe){
+							var ifload1 = document.getElementById("ifload1");
+							iframe.style.display = "";
+							ifload1.style.display = "none";
+						}
+//					//判断是否过期演出  开始========================================
+//					var getDateUrl = "/module/performancemanager/utilajax.jsp?action=getdate&temDate="+new Date().getTime();
+//					getAjaxRequestText(getDateUrl,setDisPlay);
+//					function setDisPlay(date){
+//						if(typeof(lastDate) != "undefined" && lastDate != null && lastDate != ""){
+//							var dateOne = new Date(lastDate.split(" ")[0].replace(/\./g,'/'));//演出最后时间
+//							var dateTwo = new Date(date.split(" ")[0].replace(/\-/g,'/'));//服务器当前时间
+//							//演出最后时间 大于 服务器当前时 则显示iframe 否则不显示
+//							if(dateOne >=dateTwo){
+//								document.getElementById("topIframe").style.display="";
+//								document.getElementById("topTicketDiv").style.display="none";
+//								
+//								var gettopIframe = document.getElementById("topIframe");
+//								if (gettopIframe.attachEvent){   
+//									gettopIframe.attachEvent("onload", function(){   
+//										getifLoad1(gettopIframe);   
+//									});	   
+//								} else {   
+//									gettopIframe.onload = function(){   
+//										getifLoad1(gettopIframe);   
+//									};   
+//								}   
+//							}else{
+//								document.getElementById("topIframe").style.display="none";
+//								document.getElementById("topTicketDiv").style.display="";
+//							}
+//						}
+//					}
+//					
+//					//判断是否过期演出 结束========================================
+</script>				
+
+                  <tr>
+                    <td align="left" class="linkf12_blue1" style="padding-left:23px;"><div class="ol_style"><p><font face="宋体">单场套票优惠：购买本场第二三档价位演出票3张及以上可享8折优惠，2张可享85折优惠。</font></p></div></td>
+                  </tr>
+				  <tr>
+				    <td valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tbody><tr>
+                        <td height="20" align="left">
+						
+						<span style="padding-right: 15px; float: left; display: none; " id="ywdiv">
+					
+						<div style=" width:auto;"><a target="_blank" id="ywHref" style="display: none; "><img src="/templates/images/but_ens.gif"></a></div>
+						<script language="javascript">
+				   //英文按钮是否显示
+				        var  ywHref=document.getElementById("ywHref");
+						var ywdiv=document.getElementById("ywdiv");
+					   	var zwHref ="";
+						if(zwHref != ""){
+							//document.getElementById("ywHref").href=zwHref;
+//							document.getElementById("ywHref").style.display="";
+                          ywHref.href=zwHref;
+						  ywdiv.style.display="";
+						}
+				</script>
+				  
+				</span>
+				
+				<span style="padding-right: 15px; float: left; display: none; " id="jmztdiv">
+				
+				<img src="/templates/images/button/buttonbutton_qz.gif" onmousemove="javascript:this.src='/templates/images/button/button_qz.gif';" onmouseout="javascript:this.src='/templates/images/buttonbutton_qz.gif';" name="Image23" width="25" height="14" border="0" id="Image23" onload="checkKeywordsType(this);" style="display:none;">
+						
+							<div>
+    <a id="jmzturl" href="" target="_blank" style="display: none; "><img src="/templates/images/button/button_jmzt_on.jpg" border="0"></a></div>
+	<script language="javascript">
+		var jmzturl = document.getElementById("jmzturl");
+		var jmztdiv = document.getElementById("jmztdiv");
+		var jmzturllink = "";
+		if(jmzturllink!=""){
+			jmzturl.href = jmzturllink;
+			jmztdiv.style.display="";
+		}
+	</script>	</span>
+	<span style="padding-right:15px;float:left; " id="yxst">
+	
+	<a href="/cgyl/yxstzx/index.shtml" target="_blank"><img src="/templates/images/button/button_qs2.gif" onmousemove="javascript:this.src='/templates/images/button/button_qs2.gif';" onmouseout="javascript:this.src='/templates/images/button/button_qs2.gif';" name="Image23" width="25" height="14" border="0" id="Image23" onload="checkIssale(this);" style="display:none;"></a></span>
+					</td>
+				
+						
+                      </tr>
+                    </tbody></table></td>
+				  </tr>
+    </tbody></table></td>
+  </tr>
+  <tr>
+  	<td height="16" class="linkf12_black" style="display: none; ">
+		*官网购票优先便捷，尽享优惠98折起！	</td>
+  </tr>
+  <tr>
+    <td align="left" valign="bottom"><table width="240" border="0" cellspacing="0" cellpadding="0">
+                      <tbody><tr>
+                        <td width="22" height="20" align="left" valign="bottom"><img src="/templates/images/sc_line.gif" width="16" height="14"></td>
+                        <td width="65" height="20" align="left" valign="bottom" class="linkf12_black"><a target="_blank" href="http://ticket.chncpa.org/fg/user/popupfavproduct.do?actionType=favproduct&amp;productId=864170&amp;backurl=/ycgp/jmxx/2013-09-12/864170.shtml">收藏</a></td>
+                        <td width="25" height="20" align="left" valign="bottom"><img src="/templates/images/tj_line.gif" width="20" height="16"></td>
+                        <td width="65" height="20" align="left" valign="bottom" class="linkf12_black">
+<script language="javascript"><!--   
+        function openMail() {   
+            var mailto = "";
+			var mailcc = "";
+            var mailsub = "国家大剧院演出推荐：国家大剧院制作乔治·比才歌剧《卡门》";
+            var mailbody = "http://www.chncpa.org//ycgp/jmxx/2013-09-12/864170.shtml";
+            var param = new Array(mailto,mailcc,mailsub,mailbody);
+            //window.showModalDialog("/templates/inc/openmail.html",param,"dialogWidth:0px; dialogHeight:0px; status:no; help:No; scroll:no; resizable:no;"); 
+			window.open("/module/performancemanager/qmxxrecommend.jsp?mailsub="+encodeURIComponent(mailsub)+"&mailbody="+encodeURIComponent(mailbody),'_blank','width=450,height=400');  
+        }
+// -->   
+</script> 
+<a href="JavaScript:openMail();">推荐</a></td>
+                        <td width="21" height="20" align="left" valign="bottom"><img src="/templates/images/fx_line.gif" width="16" height="16"></td>
+                        <td height="20" align="left" valign="bottom" class="linkf12_black"><!-- ShareTo Button BEGIN -->
+						<a href="javascript:showShareDiv('block');">分享</a>
+<!-----------------------------分享到js开始------------------------------->
+<div id="shareDiv" style="position:absolute; text-align:right;width:68px; padding:10px 14px 10px 13px;display:none; background:#ffffff; border:solid 1px #cfcfcf;"><a href="javascript:openHtml(1)"><img src="/templates/images/icon_sina.jpg" title="分享到新浪微博" alt="添加到新浪微博" border="0"></a><br> <br> <a href="javascript:openHtml(2)"><img src="/templates/images/icon_TXWEIBO.jpg" title="分享到腾讯微博" alt="添加到腾讯微博" border="0"></a><br><br><a href="javascript:showShareDiv(1)"><img src="/templates/images/button_close.jpg" alt="关闭"></a></div>
+<script type="text/javascript">
+var shareInfo = "国家大剧院官方网站-演出剧目";
+function showShareDiv(str){
+if(str == 1){
+	document.getElementById('shareDiv').style.display = "none";
+}else{
+	document.getElementById('shareDiv').style.display = str;
+}
+}
+function openHtml(str){
+	shareInfo='我刚刚看到一场演出＂'+document.title+'＂'+location.href+'你也来看看吧！@国家大剧院';
+	if(str ==1){
+		window.open('http://v.t.sina.com.cn/share/share.php?title='+encodeURIComponent(shareInfo)+'&content='+encodeURIComponent(shareInfo)+'&source=bookmark','_blank','width=450,height=400');
+	}
+	if(str ==2){
+	window.open('http://v.t.qq.com/share/share.php?url='+encodeURIComponent(shareInfo)+'&content='+encodeURIComponent(shareInfo)+'&source=bookmark','_blank','width=450,height=400');
+	}
+	
+}
+var  share = "<a href='javascript:openHtml(1)'><img src='/templates/images/icon_sina.jpg' title='分享到新浪微博' alt='添加到新浪微博' border='0'></a><br /> <br /> <a href='javascript:openHtml(2)'><img src='/templates/images/icon_TXWEIBO.jpg' title='分享到腾讯微博' alt='添加到腾讯微博' border='0'></a><br /><br /><a href='javascript:showShareDiv(1)'><img src='/templates/images/button_close.jpg' alt='关闭' /></a>";
+;
+document.getElementById("shareDiv").innerHTML=share;
+
+</script>
+<!-----------------------------分享到js结束------------------------------->
+
+<!-- ShareTo Button END -->
+						</td>
+                      </tr>
+                    </tbody></table>
+</td>
+  </tr>
+</tbody></table>				   </td>
+				  </tr>
+                </tbody></table></td>
+              </tr>
+            </tbody></table></td>
+          </tr>
+        </tbody></table>
+		
+		</td>
+        <td width="5"></td>
+        <td width="223" valign="top" class="xwzx_bg">
+		<script type="text/javascript" src="/templates/js/claend.js">
+
+
+</script>
+<script language="javascript">
+//演出搜索关键字框事件
+function keyValue(obj,val){
+	if(obj.value == "" || obj.value=="关键字"){
+		obj.value=val;
+	}
+}
+
+//日期选择器
+function setTextTime(str){
+	var obj = document.getElementById(str);
+	HS_setDate(obj);
+}
+
+
+
+//演出搜索表单验证
+function checkSearch(){
+	var keyObj = document.getElementById("key");
+	if(keyObj.value == "关键字"){
+		keyObj.value="";
+	}
+	//得到演出剧场拼成字符串
+	//得到剧目类别拼成字符串
+	var temXg = "";
+	var xgxwgjcArr = document.getElementsByName("xgxwgjcChk");
+	for(var i=0;i<xgxwgjcArr.length;i++){
+		if(xgxwgjcArr[i].checked == true){
+			temXg += xgxwgjcArr[i].value+",";
+		}
+	}
+	if(temXg != ""){
+		temXg = temXg.substring(0,temXg.length-1);
+	}
+	document.getElementById("xgxwgjc").value=temXg;
+
+//	var temK2 = "";
+//	var keyword2Arr = document.getElementsByName("keyword2Chk");
+//	for(var i=0;i<keyword2Arr.length;i++){
+//		if(keyword2Arr[i].checked == true){
+//			temK2 += keyword2Arr[i].value+",";
+//		}
+//	}
+//	if(temK2 != ""){
+//		temK2 = temK2.substring(0,temK2.length-1);
+//	}
+//	document.getElementById("keyword2").value=temK2;
+	return true;
+}
+</script>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tbody><tr>
+            <td height="220" align="center" valign="top" class="xwzx_bg">
+			
+					<!--searchPerformance演出信息搜索开始-->
+ <form target="_blank" action="/module/search/searchperformance.jsp" method="post" name="searchFrm" onsubmit="return checkSearch()">
+ <input type="hidden" name="sid" value="21">
+ <input type="hidden" name="keyword2" id="keyword2" value="">
+ <input type="hidden" name="xgxwgjc" id="xgxwgjc" value="">
+
+                                        <table width="203" border="0" align="center" cellpadding="0" cellspacing="0">
+                                          <tbody><tr>
+                                            <td height="38" valign="top" class="xian_line">
+                                              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                <tbody><tr>
+                                                  <td align="left" valign="top" class="f16_blue1 pad_t12">
+                                                    演出查询                                                  </td>
+                                                  <td width="135" align="right" valign="top" style="padding-top:2px;"><img src="/templates/images/sprx1.jpg" width="125" height="30"></td>
+                                                </tr>
+                                              </tbody></table>                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td height="29" align="left" valign="bottom">
+                                              <input type="text" name="key" id="key" class="input_test" value="关键字" onfocus="keyValue(this,'')" onblur="keyValue(this,'关键字')">                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td align="left">
+                                              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                <tbody><tr>
+                                                  <td width="75" height="30" align="left"><input type="text" name="startTime" id="startTime" class="input_test1" value=""></td>
+                                                  <td width="21" height="30" align="left">
+                                                    
+                                                  <img style="cursor:hand;" onclick="setTextTime('startTime')" src="/templates/images/rl_but.jpg" width="16" height="16" border="0">                                                                                           </td>
+                                                  <td width="16" height="30" align="left" class="f12_grey1">
+                                                    至                                                  </td>
+                                                  <td width="76" height="30" align="left">
+                                                    <input type="text" name="endTime" id="endTime" class="input_test1" value="">                                                  </td>
+                                                  <td width="16" height="30" align="left">
+                                                
+                                                      <img style="cursor:hand;" onclick="setTextTime('endTime')" src="/templates/images/rl_but.jpg" width="16" height="16" border="0">                                                                                                 </td>
+                                                </tr>
+                                            </tbody></table>                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td align="left">
+                                              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                <tbody><tr>
+                                                  <td width="21" height="20" align="left">
+                                                    <label>
+                                                      <input type="checkbox" name="xgxwgjcChk" value="歌剧">
+                                                    </label>                                                  </td>
+                                                  <td width="58" height="20" align="left" class="f12_grey1">
+                                                    歌剧                                                  </td>
+                                                  <td width="21" height="20" align="left">
+                                                    <label>
+                                                      <input type="checkbox" name="xgxwgjcChk" value="音乐">
+                                                    </label>                                                  </td>
+                                                  <td width="58" height="20" align="left" class="f12_grey1">
+                                                    音乐                                                 </td>
+                                                  <td width="21" height="20" align="left">
+                                                    <label>
+                                                      <input type="checkbox" name="xgxwgjcChk" value="舞蹈">
+                                                    </label>                                                  </td>
+                                                  <td height="20" align="left" class="f12_grey1">
+                                                    舞蹈                                                 </td>
+                                                </tr>
+                                                <tr>
+                                                  <td width="21" height="20" align="left">
+                                                    <label>
+                                                      <input type="checkbox" name="xgxwgjcChk" value="戏剧">
+                                                    </label>                                                  </td>
+                                                  <td width="58" height="20" align="left" class="f12_grey1">
+                                                    戏剧                                                  </td>
+                                                  <td width="21" height="20" align="left">
+                                                    <label>
+                                                      <input type="checkbox" name="xgxwgjcChk" value="戏曲">
+                                                    </label>                                                  </td>
+                                                  <td width="58" height="20" align="left" class="f12_grey1">
+                                                    戏曲												  </td>
+													 <td width="21" height="20" align="left">
+                                                    <label>
+                                                      <input type="checkbox" name="xgxwgjcChk" value="原创">
+                                                    </label>                                                  </td>
+                                                  <td height="20" align="left" class="f12_grey1">
+                                                    原创                                                
+													
+												  </td>
+                                                </tr>
+                                              </tbody></table>                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td align="left">
+                                              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                <tbody><tr>
+                                                  <td width="21" height="20" align="left">
+                                                    <label>
+                                                      <input type="radio" name="timeRange" value="1">
+                                                  </label>                                                  </td>
+                                                  <td width="58" height="20" align="left">
+                                                    今天                                                  </td>
+                                                  <td width="21" height="20" align="left">
+                                                    <label>
+                                                      <input type="radio" name="timeRange" value="3">
+                                                  </label>                                                  </td>
+                                                  <td width="58" height="20" align="left">
+                                                    3天内                                                  </td>
+                                                  <td width="21" height="20" align="left">
+                                                    <label>
+                                                      <input type="radio" name="timeRange" value="7">
+                                                  </label>                                                  </td>
+                                                  <td height="20" align="left">
+                                                    本周                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td width="21" height="20" align="left">
+                                                    <label>
+                                                      <input type="radio" name="timeRange" value="30">
+                                                  </label>                                                  </td>
+                                                  <td width="58" height="20" align="left">
+                                                    本月                                                  </td>
+                                                  <td width="21" height="20" align="left">
+                                                    <label>
+                                                      <input type="radio" name="timeRange" value="180">
+                                                  </label>                                                  </td>
+                                                  <td width="58" height="20" align="left">
+                                                    半年内                                                  </td>
+                                                  <td width="19" height="20" align="left">&nbsp;                                                  </td>
+                                                  <td height="20" align="left">&nbsp;                                                  </td>
+                                                </tr>
+                                              </tbody></table>                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td height="40" align="center">
+                                              
+                                                <input type="image" src="/templates/images/search1.jpg" width="52" height="20" border="0">
+                                              
+                                            &nbsp;&nbsp;<a target="_blank" href="/module/search/searchperformance.jsp"><img style="cursor:hand;" src="/templates/images/search_gj.jpg" width="70" height="20" border="0"></a></td>
+                                          </tr>
+                                </tbody></table>
+</form>
+										 <!--searchPerformance演出信息搜索结束-->
+			
+			</td>
+          </tr>
+        </tbody></table>
+
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody><tr>
+    <td height="5" class="blue_bg"></td>
+  </tr>
+</tbody></table>
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tbody><tr>
+            <td align="center" valign="top" class="xwzx_bg"><table width="103" border="0" cellspacing="0" cellpadding="0">
+              <tbody><tr>
+                <td width="113" valign="top" class="xian_line"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tbody><tr>
+                    <td align="left" valign="top" class="f16_blue1 pad_t7 pad_bot6">在线客服</td>
+                 
+                  </tr>
+                </tbody></table></td>
+              </tr>
+			
+			  <tr>
+			<td height="50" align="left" class="pad_t4 pad_bot5"><div style="width:0px;float:left;margin-right:3px; margin-left:3px;"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+</table>
+</div><div style="width:200px;float:left;margin-right:3px; margin-left:3px;"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody><tr>
+    <td height="57" align="center" valign="middle"><a href="/ycgp/zxkf/onlinehelp.html" target="_blank"><img src="/templates/images/zxkf_02.gif" width="200" border="0"></a></td>
+  </tr>
+  <tr>
+  </tr>
+</tbody></table>
+</div>
+
+            
+            </td>
+			  </tr>
+			  
+
+            </tbody></table></td>
+          </tr>
+        </tbody></table>
+		
+    
+
+		
+		
+		</td>
+      </tr>
+    </tbody></table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="mar_t5">
+      <tbody><tr>
+        <td width="755" height="355" align="left" valign="top" class="whlie_bg">
+		
+		<table width="100%" border="0" cellspacing="0" cellpadding="0" class="whlie_bg">
+          <tbody><tr>
+            <td height="30" align="left" valign="top" class="bg_blue2"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tbody><tr>
+                <td width="10" height="30"></td>
+                <td width="106" height="23" align="center" valign="top" class="linkf14_black1 but_bg_on pad_t7" id="td1" onmouseover="" style=""><a href="javascript:chengeStyle1('1','td','table','1','11');">演出介绍</a></td>
+                <td width="106" height="23" align="center" valign="top" class="linkf14_whlie4 but_bg_off pad_t7" id="td2" onmouseover="" style=""><a id="conductor" href="javascript:chengeStyle1('2','td','table','1','11')">主创</a></td>
+				<td width="106" height="23" align="center" valign="top" class="linkf14_whlie4 but_bg_off pad_t7" id="td3" onmouseover="" style=""><a id="artist" href="javascript:chengeStyle1('3','td','table','1','11')">主演</a></td>
+				<td width="106" height="23" align="center" valign="top" class="linkf14_whlie4 but_bg_off pad_t7" id="td4" onmouseover="" style=""><a href="javascript:chengeStyle1('4','td','table','1','11')">演出团体</a></td>
+				<td width="106" height="23" align="center" valign="top" class="linkf14_whlie4 but_bg_off pad_t7" id="td5" onmouseover="" style=""><a id="jmxx" href="javascript:chengeStyle1('5','td','table','1','11')">曲目</a>
+			<script src="/templates/js/common.js"><!--封装ajax方法--></script>
+			<script language="javascript">
+			/*指挥、艺术家、曲目*/
+			var url = "/module/performancemanager/manager/setfield.jsp?id=864170";
+			var conductor = document.getElementById("conductor");
+			var artist = document.getElementById("artist");
+			var jmxx = document.getElementById("jmxx");
+			
+			getAjaxRequestTextOne(url, writeInfo);
+			function writeInfo(temp){
+				temp = temp.replace(/(^\s*)|(\s*$)/g, "");	
+				var resArr = temp.split(";")
+				if(temp.indexOf("conductor") != -1){
+				var newCon = temp.substring(temp.indexOf("conductor"),temp.indexOf("conductor")+11);
+					if(newCon.substring(newCon.length - 1) == "0"){
+							conductor.innerHTML = "指挥";
+					}else{
+							conductor.innerHTML = "主创";
+					}
+				}
+				if(temp.indexOf("artist") != -1){
+					var newArt = temp.substring(temp.indexOf("artist"),temp.indexOf("artist")+8);
+					if(newArt.substring(newArt.length - 1) == "0"){
+						artist.innerHTML = "艺术家";
+					}else{
+						artist.innerHTML = "主演";
+					}
+				}
+				if(temp.indexOf("jmxx") != -1){
+					var newJm = temp.substring(temp.indexOf("jmxx"),temp.indexOf("jmxx")+6);
+					//alert(newJm);
+					if(newJm.substring(newJm.length - 1) == "0"){
+					//alert(newJm.substring(newJm.length - 1));
+						jmxx.innerHTML = "曲目";
+					}else if(newJm.substring(newJm.length - 1) == "1"){
+						jmxx.innerHTML = "剧目";
+					}else if(newJm.substring(newJm.length - 1) == "2"){
+						jmxx.innerHTML = "咏叹";
+					}
+				}
+				setTimeout("getNextAjaxVideo()",1000);	
+				setTimeout("getNextAjaxMethod()",2000);	
+			}
+			</script></td>
+				<td width="106" height="23" align="center" valign="top" class="linkf14_whlie4 but_bg_off pad_t7" id="td6" onmouseover="" style=""><a href="javascript:chengeStyle1('6','td','table','1','11')">剧情</a></td>
+				<td width="106" height="23" align="center" valign="top" class="linkf14_whlie4 but_bg_off pad_t7" id="td7" onmouseover="" style="display:none;">
+				<a id="field10A" href="javascript:chengeStyle1('7','td','table','1','11')">作曲家</a></td>
+		<!--<script src="/templates/js/common.js">--><!--封装ajax方法--><!--</script>-->
+		<script language="javascript">
+			//str = encodeURI(str);
+			/*分场演员表--演出阵容*/
+			/*var url = "/module/performancemanager/manager/setfield8.jsp?action=getfield10&field8=0&id=864170&date="+new Date().getTime();
+		
+			getAjaxRequestText(url,writeInfo);
+		function writeInfo(tem){
+		tem = tem.replace(/(^\s*)|(\s*$)/g, "");
+			if(tem == "1"){
+				document.getElementById("field10A").innerHTML="演员阵容";
+			}else{
+				document.getElementById("field10A").innerHTML="分场演员表";
+			}
+		}*/
+		
+		</script>
+		
+				
+				<td width="106" height="23" align="center" valign="top" class="linkf14_whlie4 but_bg_off pad_t7" id="td8" onmouseover="" style="display:none;"><a href="javascript:chengeStyle1('8','td','table','1','11')">其他图片</a></td>
+				<td width="106" height="23" align="center" valign="top" class="linkf14_whlie4 but_bg_off pad_t7" id="td9" onmouseover="" style="display:none;"><a href="javascript:chengeStyle1('9','td','table','1','11')">相关视频</a></td>
+				<td width="106" height="23" align="center" valign="top" class="linkf14_whlie4 but_bg_off pad_t7" id="td10" onmousemove="" style="display:none;"><a href="javascript:chengeStyle1('10','td','table','1','11')">演出回顾</a></td>
+				<td width="106" height="23" align="center" valign="top" class="linkf14_whlie4 but_bg_off pad_t7" id="td11" onmousemove="" style="display:none;"><a href="javascript:chengeStyle1('11','td','table','1','11')">赞助商</a></td>
+				<td height="30" align="right">&nbsp;</td>
+              </tr>
+            </tbody></table></td>
+          </tr>
+          <tr>
+            <td valign="top" style=" padding-bottom:15px;">
+			<div id="showword" style="width:740px;  margin-left:auto; margin-right:auto; margin-top:20px;text-align:left;display:none; font-size:14px; text-indent:2em;">剧目详细信息即将上线，敬请期待！</div>
+	<div id="www_zzjs_net" style="width:740px;  margin-left:auto; margin-right:auto; margin-top:20px;text-align:left;">
+	
+			<!--演出介绍-->
+			  <table width="720" border="0" cellspacing="0" cellpadding="0" id="table1" style="display: block; ">
+                <tbody><tr>
+                  <td align="left" valign="top" class=" pad_left_r15">
+                    <div class="line_h24 f14_black2" style="display:inline;" id="ycjs"><p align="right" target="_blank"><a href="http://www.chncpa.org/cns/subsite/km201312/index.html"><font color="#0033ff">点击进入<font face="宋体">国家大剧院制作法国比才歌剧《卡门》专题</font></font></a><font color="#0033ff"><font face="宋体"><font face="宋体"></font></font></font></p>
+<p align="left" target="_blank"><font face="宋体"><font face="宋体"><font face="宋体">歌剧《卡门》是法国作曲家比才的代表名作，也是中国观众最为熟悉的西方经典歌剧之一。形象鲜明的人物、澎湃炽烈的情感、对人性真切深刻的描摹，使得《卡门》具有强烈的“真实主义”风格。主题丰富、编配大气的乐段堪称法国歌剧传统与19世纪欧洲音乐创作新思潮结合的典范，大量旋律优美的咏叹调亦被翻译、改编成不同语言的各种版本在世界范围内广为传唱。国家大剧院制作比才歌剧《卡门》创排于2010年，力邀享誉世界的国际著名歌剧导演弗兰切斯卡·赞贝罗领衔创作。赞贝罗已执导过五个不同版本的《卡门》，其中2006年的英国皇家歌剧院版《卡门》以其强烈的现实主义表达方式和“电影化”的表演，让赞贝罗扬名全世界，这版《卡门》也取代老版成为了英国皇家歌剧院珍藏剧目。<br>　　赞贝罗2010年为国家大剧院创作的中国版《卡门》同样光彩夺目。2010年5月该剧首演之际，著名指挥大师艾森巴赫观剧后评价颇高，著名剧作家邹静之在看完全剧后更是感叹：“这是我看过的最饱满的《卡门》，它真正做到了常演常‘新’，是一部满台生辉的现实主义大戏！”以赞贝罗为代表的英、法、美、中等多国艺术家的实力加盟，让大剧院实现了真正意义上的国际化歌剧制作模式。因此，歌剧《卡门》可说是国家大剧院剧目制作历程上的一座重要里程碑。国家大剧院推出的新版制作本着尊重原作、尊重歌剧传统、尊重当前中国观众对歌剧艺术的审美需求的原则进行创作，着力突出歌剧本身的“真实主义”风格，视觉上以雄浑大气的历史感，将歌剧《卡门》的“大歌剧”气象充分展现。2010年，本剧一经首演便备受好评，在2011、2013年两度复排。本次，《卡门》将重返大剧院的舞台，带观众领略这部不朽歌剧经典的风采。</font></font></font></p>
+<p align="center" target="_blank"><font face="宋体"><img border="0" src="/module/performancemanager/manager/uploadfiles/2013112905404707.JPG"></font></p>
+<p align="left" target="_blank"><font face="宋体"><font face="宋体">卡门：凯特·阿尔德里希、奥克萨娜·沃尔科娃<br>　　堂·何塞：迪阿戈·阿兰卡姆、莫华伦<br>　　埃斯卡米罗：张峰、袁晨野<br>　　米凯拉：周晓琳、高蕾<font face="宋体">（特邀中央歌剧院女高音）</font><br>　　弗莱斯奎塔：李晶晶<font face="宋体">（特邀中央歌剧院女高音）</font>、李欣桐 <br>　　梅赛德斯：张卓<br>　　丹卡罗：刘嵩虎、王鹤翔&nbsp; <br>　　雷曼达多：苏大为&nbsp; <br>　　祖尼卡：赵明<br>　　莫拉莱斯：王东隽 <br>　　莉拉斯·帕西亚：刘小婉<br>　　帕西亚先生：杨广萌</font></font></p></div>
+					</td>
+					<script language="javascript">
+						var ycjs = document.getElementById("ycjs");
+						var td1 = document.getElementById("td1");
+						if(ycjs.innerText!=""){
+							td1.style.display = "";
+						}else{
+							document.getElementById("table1").style.display = "none";
+						}
+					</script>
+                </tr>
+              </tbody></table>	
+			  
+			  
+			  
+			  <!--指挥-->
+			  <table width="720" border="0" cellspacing="0" cellpadding="0" id="table2" style="display: none; ">
+                <tbody><tr>
+                  <td align="left" valign="top">
+				  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tbody><tr>
+                      <td align="left" valign="top" class="pad_left1" id="zh">
+					  <div id="zhihuiP">
+						   
+				   <div style="width:720px;float:left;clear:both">
+				     <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                       <tbody><tr>
+                         <td valign="top" class="line_h24 f14_black2">
+	<p style="width:auto; float:left; padding-bottom:3px;"><img name="perImg3" width="158" src="/module/performancemanager/manager/images/zhihui/1384495388219.jpg" onerror="parentNode.style.display='none'"></p>
+                     <span style="padding-left:28px;"><font style="font-weight:bold;">张国勇</font>&nbsp;指挥</span><br><p><font face="宋体">中国著名指挥家，1983年毕业于上海音乐学院指挥系，1987年被莫斯科国立柴科夫斯基音乐学院授予音乐博士学位。先后师从著名指挥家、音乐教育家黄晓同教授和俄罗斯著名指挥大师罗日杰斯特文斯基。现任上海歌剧院艺术总监，上海音乐学院教授、指挥系主任。<br>　　在多年的艺术生涯中，先后与国内外著名歌剧院、交响乐团合作指挥演出了一系列歌剧、芭蕾舞剧、交响合唱等经典作品，尤其擅长指挥俄罗斯作品，是目前国内公认的肖斯塔科维奇交响曲的最佳诠释者。<br>　　他的指挥风格简明自然富有灵性，如火的激情与深刻的理性浑然天成，极具艺术张力。近年来频繁活跃在国际舞台上，足迹遍及美国、法国、德国、瑞士、俄罗斯、澳大利亚以及中国港澳台等国家和地区。<br>　　2006年应邀担任第八届西班牙卡达喀斯国际指挥大赛评委。2007年曾率浙江民族乐团赴欧洲巡演，后又多次与国内外知名民乐团合作，包括香港中乐团、台湾国乐团、新加坡华乐团等。</font></p></td>
+
+					  </tr>
+                     </tbody></table>
+				   </div>
+				   			   
+				   <div style="width:720px;float:left;clear:both">
+				     <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                       <tbody><tr>
+                         <td valign="top" class="line_h24 f14_black2">
+	<p style="width:auto; float:left; padding-bottom:3px;"><img name="perImg3" width="158" src="/module/performancemanager/manager/images/zhihui/1352785011946.gif" onerror="parentNode.style.display='none'"></p>
+                     <span style="padding-left:28px;"><font style="font-weight:bold;">弗兰切斯卡·赞贝罗</font>&nbsp;导演</span><br><p>美国著名戏剧导演，意大利后裔，出生在美国。她早年居住在欧洲，通晓英、法、意、德、俄五国语言，青年时曾游学莫斯科大学，后为著名歌剧导演大师波聂勒担任助理导演。1984年至1991年，赞贝罗担任美国“天际线歌剧院”艺术总监。90年代中期以来，她成为世界各大歌剧院争相邀请的当红导演。她的作品遍布美国大都会歌剧院、肯尼迪艺术中心、华盛顿国家歌剧院、莫斯科大剧院、英国皇家歌剧院和斯卡拉歌剧院等。特别是2006年由她为英皇执导的《卡门》，一经推出就以其深具“真实主义”风格的舞台表现获得了极大成功，掀起了顶级歌剧院《卡门》的改版风潮。<br>　　她的主要作品包括在纽约大都会歌剧院上演的《拉美莫尔的露契亚》、《美国悲剧》、《特洛伊人》；英国皇家歌剧院上演的《唐<font face="宋体">·</font>璜》、《黑桃皇后》、《卡门》；巴黎歌剧院上演的《图兰朵》、《莎乐美》、《战争与和平》、《游吟诗人》；莫斯科大剧院上演的《火天使》；巴伐利亚国家歌剧院上演的《奥赛罗》、《比利<font face="宋体">·</font>巴德》等。</p></td>
+
+					  </tr>
+                     </tbody></table>
+				   </div>
+				   			   
+				   <div style="width:720px;float:left;clear:both">
+				     <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                       <tbody><tr>
+                         <td valign="top" class="line_h24 f14_black2">
+	<p style="width:auto; float:left; padding-bottom:3px;"><img name="perImg3" width="158" src="/module/performancemanager/manager/images/zhihui/1359535618685.jpg" onerror="parentNode.style.display='none'"></p>
+                     <span style="padding-left:28px;"><font style="font-weight:bold;">邓肯·马克法兰</font>&nbsp;副导演/编舞</span><br><p><font face="宋体">邓肯出生于旧金山，早年便开始学习舞蹈、音乐和戏剧。他先后就读于加州第一表演艺术中学、加州大学伯克利分校、比利时莫里斯·贝嘉手印舞蹈学校和布鲁塞尔皇家音乐学院。邓肯很博学，他拥有舞蹈、戏剧、音乐、计算科学、心理学、哲学多个学位。他是知名的舞蹈教师和导师，为欧洲、北美、大洋洲和亚洲的舞蹈团、剧院和歌剧院共创作舞台剧作品100多部。此外，他还在多所学校任教，包括科斯塔梅萨学院、布鲁塞尔莫里斯·贝嘉手印舞蹈学校、加州大学伯克利分校、拉班运动与舞蹈中心和伦敦当代舞蹈学校。</font></p></td>
+
+					  </tr>
+                     </tbody></table>
+				   </div>
+				   			   
+				   <div style="width:720px;float:left;clear:both">
+				     <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                       <tbody><tr>
+                         <td valign="top" class="line_h24 f14_black2">
+	<p style="width:auto; float:left; padding-bottom:3px;"><img name="perImg3" width="158" src="/module/performancemanager/manager/images/zhihui/1359535302853.jpg" onerror="parentNode.style.display='none'"></p>
+                     <span style="padding-left:28px;"><font style="font-weight:bold;">彼得·戴维森</font>&nbsp;舞美设计</span><br><p>英国著名舞美设计师，他的作品包括歌剧《旋舞》、《战士之心》、《费加罗的婚礼》、《标号人》、《福斯塔夫》、《沉默的女人》、《狂想曲》、《玫瑰骑士》、《卡门》、《安娜·波莱娜》、《卡塔·卡班诺娃》、《本都国王米特里达特》、《曼侬·莱斯科》（澳大利亚）、《雷克的历程》、《费加罗的婚礼》、《大鼻子情圣》、《黑桃皇后》（英国皇家歌剧院）、《威廉·退尔》、《费德里奥》、《女武神》、《波吉与贝丝》、《莎乐美》（华盛顿）、《波西米亚人》、《燕子》、《卡门》；戏剧：《白魔》、《唐·卡洛斯》、《哥本哈根》、《民主》、《下一站天国》、《美狄亚》、《哈姆雷特》、《杜斯》、《Is he&nbsp;Dead?<font face="宋体">》、《</font>欢乐的精灵》；音乐剧《绿野仙踪男孩》）、《万世巨星》、《演艺船》、《蝴蝶梦》、《绝代艳后》。彼得·戴维森在国家大剧院担任过<font face="Times New Roman">2010</font><font face="宋体">歌剧《卡门》、</font><font face="Times New Roman">2013</font><font face="宋体">年歌剧《霍夫曼的故事》舞美设计。</font>&nbsp;</p><!--EndFragment--></td>
+
+					  </tr>
+                     </tbody></table>
+				   </div>
+				   			   
+				   <div style="width:720px;float:left;clear:both">
+				     <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                       <tbody><tr>
+                         <td valign="top" class="line_h24 f14_black2">
+	<p style="width:auto; float:left; padding-bottom:3px;"><img name="perImg3" width="158" src="/module/performancemanager/manager/images/zhihui/1359686452323.jpg" onerror="parentNode.style.display='none'"></p>
+                     <span style="padding-left:28px;"><font style="font-weight:bold;">苏珊·威明顿</font>&nbsp;服装设计</span><br><p>拥有梅德斯通艺术学院与马特利戏剧设计学院的荣誉美术学士学位。设计作品包括伦敦皇家阿尔伯特音乐厅上演的《璇宫画舫》、《艺术家生涯》（均由弗兰切斯卡·赞贝罗导演），威尼斯凤凰歌剧院上演的《燕子》（格雷厄姆·维克导演），新墨西哥圣达菲歌剧节上演的《浮士德》、德国马格德堡上演的《茶花女》、奥地利维也纳歌剧院上演的《奥菲欧与尤丽狄茜》、德国哈雷歌剧院上演的《艾里唐特》（均由史蒂芬·劳里斯导演），希腊国家歌剧院上演的《囚徒》和《人生如朝露》、法国里昂国家歌剧院上演的《札米列》、英国国家歌剧院上演的《仲夏夜之梦》，布拉格国家剧院上演的《马克罗普洛斯案件》（均由克里斯托弗·艾尔登导演），布雷根茨艺术节上演的《纳布科》与《费德里奥》（均由大卫·庞特尼导演），罗马国家歌剧院上演的《自在魂》（均由麦克尔·布莱克摩导演）。&nbsp;</p><!--EndFragment--></td>
+
+					  </tr>
+                     </tbody></table>
+				   </div>
+				   			   
+				   <div style="width:720px;float:left;clear:both">
+				     <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                       <tbody><tr>
+                         <td valign="top" class="line_h24 f14_black2">
+	<p style="width:auto; float:left; padding-bottom:3px;"><img name="perImg3" width="158" src="/module/performancemanager/manager/images/zhihui/1384506769157.jpg" onerror="parentNode.style.display='none'"></p>
+                     <span style="padding-left:28px;"><font style="font-weight:bold;">本杰明·皮尔西</font>&nbsp;灯光设计</span><br><p>灯光设计师本杰明·皮尔斯为世界各地的剧场、歌剧院和建筑项目进行过灯光设计，包括百老汇的《乌比！》、《大河之舞》在全美及世界的巡回演出、《美女与野兽》和《窈窕淑女》的全美巡回演出，其他设计作品包括为爱丽剧院、巴尔的摩歌剧院、加拿大歌剧团、休斯顿大剧院、匹兹堡歌剧院、克利夫兰歌剧院、奥巴哈歌剧院以及威廉斯镇戏剧节等进行的设计。 </p><!--EndFragment--></td>
+
+					  </tr>
+                     </tbody></table>
+				   </div>
+				   
+				   </div>
+				   <script language="javascript">
+				   	var imgErrArr = document.getElementsByName("perImg3");
+					var tempErr = document.getElementById("zhihuiP");
+					var tuantiTP = tempErr.getElementsByTagName("p");
+					
+					for(var i=0;i<imgErrArr.length;i++){
+						if(imgErrArr[i].src.replace("/module/performancemanager/manager/images/artist/","") == ""){
+							imgErrArr[i].style.display="none";
+							imgPErrArr[i].style.display="none";
+						}else{
+						tuantiTP[i].style.paddingRight="15";
+						}
+					}
+				   </script>
+				   
+				   </td>
+				   <script language="javascript">
+						var zh = document.getElementById("zh");
+						var td2 = document.getElementById("td2");
+						var zhtem=zh.innerHTML.toUpperCase().indexOf("<SPAN");
+						if(zhtem>=0){
+							td2.style.display = "";
+						}
+					</script>
+                    </tr>
+                  </tbody></table>
+				 
+				  </td>
+                </tr>
+              </tbody></table>
+			   <!--艺术家-->
+			  <table width="720" border="0" cellspacing="0" cellpadding="0" id="table3" style="display: none; ">
+                <tbody><tr>
+                  <td align="left" valign="top">
+				  
+				  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tbody><tr>
+                      <td align="left" valign="top" class="pad_left1" id="ysj">
+					<div id="perImaP">
+			
+				 <div style="width:720px;float:left; clear:both">
+				     <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                       <tbody><tr>
+                         <td valign="top" class="line_h24 f14_black2">
+						 
+	<p style="width: auto; float: left; padding-bottom: 3px; display: none; "><img name="perImg" style="display:" src="/module/performancemanager/manager/images/artist/" width="158" onerror="parentNode.style.display='none'"></p>
+
+                     <span style="padding-left:28px;"><font style="font-weight:bold;">分场演员表 </font></span><br><p>
+</p><table border="0" cellspacing="0" cellpadding="0" width="611">
+<colgroup>
+<col width="117">
+<col width="144">
+<col width="137">
+<col width="106">
+<col width="107">
+</colgroup><tbody>
+<tr height="36">
+<td height="36" width="117"></td>
+<td width="144"><strong>卡门</strong></td>
+<td width="137"><strong>堂·何塞</strong></td>
+<td width="106"><strong>埃斯卡米罗</strong></td>
+<td width="107"><strong>米凯拉</strong></td></tr>
+<tr height="18">
+<td height="18" width="117">　　12月20日</td>
+<td width="144">凯特·阿尔德里希</td>
+<td width="137">迪阿戈·阿兰卡姆</td>
+<td width="106">张峰</td>
+<td width="107">周晓琳</td></tr>
+<tr height="18">
+<td height="18" width="117">　　12月21日</td>
+<td width="144">奥克萨娜·沃尔科娃</td>
+<td width="137">莫华伦</td>
+<td width="106">袁晨野</td>
+<td width="107">高蕾</td></tr>
+<tr height="18">
+<td height="18" width="117">　　12月22日</td>
+<td width="144">凯特·阿尔德里希</td>
+<td width="137">迪阿戈·阿兰卡姆</td>
+<td width="106">张峰</td>
+<td width="107">周晓琳</td></tr>
+<tr height="18">
+<td height="18" width="117">　　12月23日</td>
+<td width="144">奥克萨娜·沃尔科娃</td>
+<td width="137">莫华伦</td>
+<td width="106">袁晨野</td>
+<td width="107">高蕾</td></tr></tbody></table><p></p>
+<p>&nbsp;</p></td>
+
+					  </tr>
+                     </tbody></table>
+				   </div>
+				
+				   
+				 <div style="width:720px;float:left; clear:both">
+				     <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                       <tbody><tr>
+                         <td valign="top" class="line_h24 f14_black2">
+						 
+	<p style="width:auto; float:left; padding-bottom:3px;"><img name="perImg" style="display:" src="/module/performancemanager/manager/images/artist/1385111200022.jpg" width="158" onerror="parentNode.style.display='none'"></p>
+
+                     <span style="padding-left:28px;"><font style="font-weight:bold;">凯特·阿尔德里希 </font>饰 卡门</span><br><p><font face="宋体">2006年，凯特·阿尔德里希与旧金山歌剧院合作首演《卡门》之后，被媒体称为“当代‘卡门’”。随后，她在慕尼黑巴伐利亚国家歌剧院、柏林德意志歌剧院、维罗纳圆形剧院这样的重量级演出地出演“卡门”一角，征服了观众和评论界。2010年5月，她与饰演唐·何塞的乔纳斯·考夫曼在大都会歌剧院演出《卡门》。凯特·阿尔德里希的演出剧目还包括《灰姑娘》、《诺玛》、《维特》和《玫瑰骑士》。除了上述剧院，凯特·阿尔德里希合作过的剧院还包括西班牙利赛欧大剧院、汉堡国家歌剧院、博洛尼亚市政剧院、华盛顿国家歌剧院等世界顶级的歌剧院，以及萨尔茨堡音乐节、罗西尼歌剧节这样的音乐盛典。<br>　　凯特·阿尔德里希2013至2014演出季的计划包括在大都会歌剧院演唱《诺玛》，在柏林德意志歌剧院演出《卡门》。而在过去一年的演出季当中，凯特·阿尔德里希在巴黎国家歌剧院演唱了《霍夫曼的故事》，在苏黎世和首尔首演了《卡门》。她还演出并录制了马斯奈的《祭司》，这部作品在过去100多年里已经在舞台上销声匿迹。</font></p></td>
+
+					  </tr>
+                     </tbody></table>
+				   </div>
+				
+				   
+				 <div style="width:720px;float:left; clear:both">
+				     <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                       <tbody><tr>
+                         <td valign="top" class="line_h24 f14_black2">
+						 
+	<p style="width:auto; float:left; padding-bottom:3px;"><img name="perImg" style="display:" src="/module/performancemanager/manager/images/artist/1385111236090.jpg" width="158" onerror="parentNode.style.display='none'"></p>
+
+                     <span style="padding-left:28px;"><font style="font-weight:bold;">奥克萨娜·沃尔科娃 </font>饰 卡门</span><br><p><font face="宋体">女中音奥克萨娜·沃尔科娃出生于俄罗斯的明斯克，毕业于白俄罗斯国家音乐学院。奥克萨娜赢得过许多国内和国际声乐比赛的奖项，包括第22届格林卡国际声乐比赛一等奖，德沃夏克国际声乐比赛一等奖。还是学生的时候，奥克萨娜就加入了白俄罗斯大歌剧院。<br>&nbsp;&nbsp; 奥克萨娜2013至2014演出季的亮点包括重返大都会歌剧院演出新版《尤金·奥涅金》，在慕尼黑巴伐利亚国家歌剧院演出《弄臣》，在日本的巡演中演出《卡门》以及在莫斯科大剧院演出《纳布科》、《沙皇的新娘》和《卡门》。<br>&nbsp;&nbsp;&nbsp; 过去几个演出季当中，奥克萨娜的主要演出包括首次在大都会歌剧院的《弄臣》，在帕勒莫剧院演出的《歌女乔孔达》，在尼斯歌剧院的《浮士德的沉沦》，以及其他一些演出。<br>&nbsp;&nbsp;&nbsp; 奥克萨娜的演出剧目包括《卡门》、《伊戈尔王》、《蝴蝶夫人》、《尤金·奥涅金》、《浮士德的沉沦》、《纳布科》、《茶花女》、《乡村骑士》、《阿依达》等。她还在音乐会中演唱过莫扎特和威尔第的《安魂曲》、柴科夫斯基的《莫斯科康塔塔》，以及普罗科菲耶夫的《亚历山大·涅夫斯基》。</font></p></td>
+
+					  </tr>
+                     </tbody></table>
+				   </div>
+				
+				   
+				 <div style="width:720px;float:left; clear:both">
+				     <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                       <tbody><tr>
+                         <td valign="top" class="line_h24 f14_black2">
+						 
+	<p style="width:auto; float:left; padding-bottom:3px;"><img name="perImg" style="display:" src="/module/performancemanager/manager/images/artist/1385111315244.jpg" width="158" onerror="parentNode.style.display='none'"></p>
+
+                     <span style="padding-left:28px;"><font style="font-weight:bold;">迪阿戈·阿兰卡姆 </font>饰 堂·何塞</span><br><p><font face="宋体">年轻的巴西籍意大利抒情男高音迪阿戈·阿兰卡姆近些年迅速获得国际认可。维也纳国家歌剧院、柏林德意志歌剧院、里昂歌剧院、法兰克福歌剧院、瑞典皇家歌剧院、华盛顿国家歌剧院、旧金山歌剧院，以及他的家乡里约热内卢的舞台上都留下了他的身影。<br>　　蒂亚戈·阿兰卡的音乐生涯始于巴西，随后在斯卡拉歌剧院音乐学院进修，导师是传奇女高音雷拉·珍瑟。他是该音乐学院有史以来接收的第一位巴西学员，并在这里实现了自己歌剧生涯的首演。他还赢得过一些声乐比赛的奖项，获得过2008年多明戈世界歌剧声乐大赛的萨苏埃拉奖、观众奖以及歌剧二等奖。<br>　　在过去一年的演出季当中，阿兰卡在斯德哥尔摩演出了《托斯卡》，并出演了普契尼作品《曼侬·莱斯科特》的两个新制作。二月份，阿兰卡凭借《卡门》实现了在慕尼黑巴伐利亚国家歌剧院的首演。他未来的计划包括在巴登巴登和汉堡演出《曼侬·莱斯科特》，在柏林国家歌剧院演出《托斯卡》以及在斯德哥尔摩演出《图兰朵》。</font></p></td>
+
+					  </tr>
+                     </tbody></table>
+				   </div>
+				
+				   
+				 <div style="width:720px;float:left; clear:both">
+				     <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                       <tbody><tr>
+                         <td valign="top" class="line_h24 f14_black2">
+						 
+	<p style="width:auto; float:left; padding-bottom:3px;"><img name="perImg" style="display:" src="/module/performancemanager/manager/images/artist/1385109760383.jpg" width="158" onerror="parentNode.style.display='none'"></p>
+
+                     <span style="padding-left:28px;"><font style="font-weight:bold;">莫华伦 </font>饰 堂·何塞</span><br><p><font face="宋体"><font face="宋体">莫华伦</font>曾主演国家大剧院制作歌剧《卡门》、《蝙蝠》、《艺术家生涯》、《赵氏孤儿》、《图兰朵》和《漂泊的荷兰人》。<br>　　他是当今歌剧界享有盛名的男高音歌唱家，曾于巴黎歌剧院、罗马歌剧院、悉尼歌剧院、尼斯歌剧院、里昂歌剧院、阿根廷科隆剧院、荷兰国家歌剧院、莱比锡歌剧院、皇家丹麦歌剧院、博洛尼亚市立歌剧院、里斯本圣卡罗剧院、西雅图歌剧院、俄罗斯大剧院、波兰华沙国家大剧院、意大利卡利亚里大剧院、西班牙毕尔巴欧歌剧院、马罗卡的帕玛歌剧院、法国南西歌剧院、挪威伯根歌剧院、拉脱维亚国家歌剧院、夏威夷歌剧院、纽约卡耐基音乐厅、伦敦皇家艾伯特音乐厅、柏林爱乐大厅及东京三得利音乐厅、韩国首尔艺术中心及佛罗里达、布拉格、苏黎士等地的歌剧院中演出，主演了包括《托斯卡》、《艺术家生涯》、《假面舞会》、《阿伊达》、《弄臣》、《茶花女》等剧目，以及60余位经典角色。<br>　　作为澳门国际音乐节艺术总监、香港歌剧院创办人和艺术总监，他是中国和亚洲活跃的西方歌剧与音乐推广者，香港特区政府为其颁发荣誉勋章，并被意大利政府授予“团结之星骑士勋章”，被法国政府授予“文化骑士勋章”。</font></p></td>
+
+					  </tr>
+                     </tbody></table>
+				   </div>
+				
+				   
+				 <div style="width:720px;float:left; clear:both">
+				     <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                       <tbody><tr>
+                         <td valign="top" class="line_h24 f14_black2">
+						 
+	<p style="width:auto; float:left; padding-bottom:3px;"><img name="perImg" style="display:" src="/module/performancemanager/manager/images/artist/1385110010017.jpg" width="158" onerror="parentNode.style.display='none'"></p>
+
+                     <span style="padding-left:28px;"><font style="font-weight:bold;">张峰 </font>饰 埃斯卡米罗</span><br><p><font face="宋体"><font face="宋体">张峰</font>曾在国家大剧院制作的歌剧《奥赛罗》和《卡门》中分别饰演亚戈和斗牛士埃斯卡米罗。他是享有国际声誉的华人男中音、国家一级演员、上海市政协委员、维也纳国际声乐比赛评委，曾任意大利博萨国际艺术节艺术总监。2011年，意大利总统特别授予他“意大利共和国骑士勋章”。<br>　　他曾两次荣获布达佩斯国际声乐比赛一等奖，并活跃在意大利、美国、德国、匈牙利等中外音乐舞台上。他已主演了《原野》、《那时花开》、《弄臣》、《贾尼·斯基基》、《唐璜》、《托斯卡》等20余部中外歌剧。他曾在采达指挥的《塞维利亚的理发师》中饰演费加罗，在尤斯图兹·弗朗兹指挥德国国际爱乐乐团版的贝多芬《第九交响曲》和《黄河大合唱》、《中国，我可爱的母亲》、《卡尔米娜布拉纳》中担任独唱。他曾参加在意大利举办的普契尼歌剧作品音乐会、国庆60周年盛大庆典、“拿波里歌王”阿尔伯雷专场音乐会等重大演出。他还曾在意大利罗马、弗洛伦萨和纽约卡耐基音乐厅、维也纳金色大厅、上海东方艺术中心等地举办独唱音乐会。</font></p></td>
+
+					  </tr>
+                     </tbody></table>
+				   </div>
+				
+				   
+				 <div style="width:720px;float:left; clear:both">
+				     <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                       <tbody><tr>
+                         <td valign="top" class="line_h24 f14_black2">
+						 
+	<p style="width:auto; float:left; padding-bottom:3px;"><img name="perImg" style="display:" src="/module/performancemanager/manager/images/artist/1385109607413.jpg" width="158" onerror="parentNode.style.display='none'"></p>
+
+                     <span style="padding-left:28px;"><font style="font-weight:bold;">袁晨野 </font>饰 埃斯卡米罗</span><br><p><font face="宋体"><font face="宋体">袁晨野</font>曾主演国家大剧院制作歌剧《弄臣》、《卡门》、《山村女教师》、《赵氏孤儿》和《纳布科》。<br>　　</font><font face="宋体">袁晨野现任中央音乐学院声乐歌剧系教授。他曾在休斯顿大歌剧院、圣路易歌剧院、温哥华歌剧院、英国威尔士国家歌剧院、明尼苏达歌剧院、密执根歌剧院、棕榈滩歌剧院、旧金山歌剧院、加拿大歌剧院、波士顿抒情歌剧院、辛辛那提歌剧院、科罗拉多歌剧院、匹兹堡歌剧院等主演了《弄臣》、《茶花女》、《阿依达》、《拉美莫尔的露琪亚》、《爱之甘醇》、《丑角》、《卡门》、《假面舞会》、《小妇人》、《尼克松在中国》等20多部歌剧，其中后两部歌剧分别由Ondine及Naxos公司制作成音像制品向全球发行。<br>　　他还曾与费城管弦乐团、芝加哥交响乐团、巴尔的摩交响乐团等合作演出贝多芬《第九交响曲》、德沃夏克《感恩赞》、海顿《创世纪》等作品，并在美国、芬兰、新加坡等地举办独唱音乐会。他是多明戈先生担任华盛顿歌剧院艺术总监就职庆典音乐会的独唱嘉宾，并曾受克林顿总统夫妇邀请到白宫作客。<br>　　他曾获得纽约大都会歌剧院及芬兰米利亚姆·海琳国际声乐比赛的头奖，也是柴科夫斯基国际音乐比赛声乐组至今唯一的华人金奖得主。</font></p></td>
+
+					  </tr>
+                     </tbody></table>
+				   </div>
+				
+				   
+				 <div style="width:720px;float:left; clear:both">
+				     <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                       <tbody><tr>
+                         <td valign="top" class="line_h24 f14_black2">
+						 
+	<p style="width:auto; float:left; padding-bottom:3px;"><img name="perImg" style="display:" src="/module/performancemanager/manager/images/artist/1385110769083.jpg" width="158" onerror="parentNode.style.display='none'"></p>
+
+                     <span style="padding-left:28px;"><font style="font-weight:bold;">周晓琳 </font>饰 米凯拉</span><br><p><font face="宋体">周晓琳曾在国家大剧院制作的歌剧《山村女教师》中饰演杨彩虹，《艺术家生涯》中饰演咪咪,《卡门》中饰演<font face="宋体">米凯拉</font>，《赵氏孤儿》中饰演庄姬公主，《霍夫曼的故事》中饰演安东尼娅。<br>　　她是</font><font face="宋体">青年女高音歌唱家，毕业于中央音乐学院声乐歌剧系，现为总政歌舞团独唱演员。她曾在德国新声音国际比赛中获奖并获得最具亲和力奖，在北京举行的国际美声贝尔冈齐大师班中以并列第一名的成绩获“Anna and John J Sie”奖。她还曾获得中国音乐金钟奖美声唱法金奖、文化部声乐比赛文华声乐节目表演二等奖，以及在第十四届中央电视台电视歌手大奖赛中获得美声唱法银奖。<br>　　她</font><font face="宋体">曾在日本的东京和大阪成功的举办了独唱音乐会，在洛林·马泽尔指挥的贝多芬《第九交响曲》中担任女高音领唱，在阿什肯那齐指挥的马勒《第二交响乐》中担任女高音领唱。周晓琳还曾在歌剧《诗人李白》中饰演月，《悲怆的黎明中》中饰演白云，《大汉苏武》中饰演索仁娜，《蓝胡子公爵的城堡》中饰演尤迪特。</font></p></td>
+
+					  </tr>
+                     </tbody></table>
+				   </div>
+				
+				   
+				 <div style="width:720px;float:left; clear:both">
+				     <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                       <tbody><tr>
+                         <td valign="top" class="line_h24 f14_black2">
+						 
+	<p style="width:auto; float:left; padding-bottom:3px;"><img name="perImg" style="display:" src="/module/performancemanager/manager/images/artist/1385346582105.jpg" width="158" onerror="parentNode.style.display='none'"></p>
+
+                     <span style="padding-left:28px;"><font style="font-weight:bold;">高蕾 </font>饰 米凯拉</span><br><p><font face="宋体">她曾在国家大剧院制作歌剧《卡门》中饰米凯拉。<br>　　中央歌剧院女高音歌唱家，国家一级演员。在《图兰朵》中饰柳儿，在《茶花女》中饰薇奥列塔，在《艺术家的生涯》中饰咪咪，在《丑角》中饰奈达。<br>　　她曾赴奥地利维也纳皇宫与维也纳管乐乐团合作，在作曲家郭文景的现代歌剧《夜宴》中饰女主角红珠。<br>　　她曾在中法文化年奥芬巴赫歌剧《霍夫曼的故事》中饰安东妮娅，在歌剧《货郎与小姐》中饰居里乔赫拉，在歌剧《九歌》中饰茶掌柜。她还曾在洛杉矶和温哥华举办独唱音乐会，并多次赴奥地利、法国等国家演出交流，在贝多芬第九合唱交响曲《欢乐颂》、亨德尔《弥赛亚》、莫扎特《安魂曲》、威尔第《安魂曲》等多部音乐会作品中担任独唱。<br>　　她曾在澳门国际音乐节与著名指挥家汤沐海合作，在门德尔松《仲夏夜之梦》中担任领唱。她曾荣获中国音乐杯最高奖项“特别荣誉奖”，并被文化部授予“优秀演员”称号。她还曾在沈湘国际声乐比赛中获得中国赛区第一名，在俄罗斯圣彼得堡第一届国际声乐和钢琴比赛中获得声乐专业组第一名。</font></p></td>
+
+					  </tr>
+                     </tbody></table>
+				   </div>
+				
+				   
+				   </div>
+				   <script language="javascript">
+				   	var imgErrArr = document.getElementsByName("perImg");
+					var tempErr = document.getElementById("perImaP");
+					var tuantiTP = tempErr.getElementsByTagName("p");
+					
+					for(var i=0;i<imgErrArr.length;i++){
+						if(imgErrArr[i].src.replace("/module/performancemanager/manager/images/artist/","") == ""){
+							imgErrArr[i].style.display="none";
+							imgPErrArr[i].style.display="none";
+						}else{
+						tuantiTP[i].style.paddingRight="15";
+						}
+					}
+				   </script>
+				   </td>
+				   <script language="javascript">
+						var ysj = document.getElementById("ysj");
+						var td3 = document.getElementById("td3");
+						var ysjspan="<SPAN";
+						if(ysj.innerHTML.toUpperCase().indexOf(ysjspan)>=0){
+							td3.style.display = "";
+						}
+					</script>
+                    </tr>
+                  </tbody></table>
+				 
+				  </td>
+                </tr>
+              </tbody></table>
+			  <!--演出团体介绍-->
+			  <table width="720" border="0" cellspacing="0" cellpadding="0" id="table4" style="display: none; ">
+                <tbody><tr>
+                  <td align="left" valign="top">
+				  
+				  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tbody><tr>
+                      <td align="left" valign="top" class="pad_left1" id="yctt">
+					  <div id="tuantiP">
+			
+				    <div style="width:720px; float:left;clear:both">
+				     <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                       <tbody><tr>
+                         <td valign="top" class="line_h24 f14_black2">
+	<p style="width:auto; float:left; padding-bottom:3px;"><img name="perImaP2" style="display:" src="/module/performancemanager/manager/images/grouppic/1354094557331.jpg" width="158" onerror="parentNode.style.display='none'"></p>
+                     <span style="padding-left:28px;"><font style="font-weight:bold;">国家大剧院合唱团</font></span><br><p><font face="宋体">国家大剧院合唱团成立于2009年12月8日，由著名指挥家吴灵芬担任指挥，众多国际、国内优秀艺术家对合唱团进行艺术指导。团员由全国各艺术院校及海外学成的优秀学子经过严格选拔组成。作为中国最高表演艺术殿堂所属的专业文艺演出团体，合唱团秉承大剧院人民性、艺术性、国际性的宗旨，以歌剧、音乐会演出为主要任务，并积极参与各类文化交流和艺术教育活动。<br>　　国家大剧院合唱团自成立以来，积极参与国家大剧院制作的原创歌剧《西施》、《赵氏孤儿》、《运河谣》，中外经典歌剧《白毛女》、《洪湖赤卫队》、《费加罗的婚礼》、《爱之甘醇》、《塞维利亚理发师》、《意大利女郎在阿尔及尔》、《假面舞会》、《弄臣》、《茶花女》、《奥赛罗》、《漂泊的荷兰人》、《罗恩格林》、《卡门》、《托斯卡》、《图兰朵》等二十多部作品的演出，其展现的艺术水准获得了业内人士及观众的一致好评。除了歌剧演出外，合唱团还参演了许多大型声乐作品及主题音乐会，包括：《贝多芬第九交响曲》、《马勒第二交响曲》、《马勒第八交响曲》、大型音乐舞蹈史诗《复兴之路》、《美丽中国》等。作为国家大剧院驻院演出团体，合唱团先后出访新加坡、韩国、日本及香港等国家和地区参加演出交流活动，获得了广泛赞誉。<br>　　合唱团成立至今与众多著名艺术家进行了合作，并获得了大师们的赞许。世界著名男高音多明戈说：“能和这些才华横溢的青年艺术家们合作，是我的荣幸。”指挥家洛林·马泽尔表示：“这是一个充满激情的合唱团。”指挥家丹尼尔·欧伦排练后兴奋地表示：“这是我见过的声音最棒的合唱团。虽然他们很年轻，但比很多欧洲的合唱团都要好。”在国家大剧院的舞台上，与合唱团合作演出的包括：著名导演弗朗切斯卡·赞贝罗、强卡洛·德·莫纳科、乌戈·迪安那、陈薪伊、曹其敬、廖向红，著名指挥家洛林·马泽尔、丹尼尔·欧伦、耶欧·莱维、安德烈·利卡塔、吕嘉、李心草、张国勇，著名歌唱家里多明戈、里奥·努奇、茵瓦·穆兰、胡安·彭斯、布兰登·乔瓦诺维奇、弗朗切斯科·梅利、戴玉强、魏松、莫华伦、袁晨野、廖昌永、章亚伦、张立萍、迪里拜尔、孙秀苇、和慧、李晓良等。合唱团全年演出超过百场，为推动国家大剧院的进一步发展发挥了积极的作用。</font></p></td>
+
+					  </tr>
+                     </tbody></table>
+				   </div>
+				   
+				    <div style="width:720px; float:left;clear:both">
+				     <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                       <tbody><tr>
+                         <td valign="top" class="line_h24 f14_black2">
+	<p style="width:auto; float:left; padding-bottom:3px;"><img name="perImaP2" style="display:" src="/module/performancemanager/manager/images/grouppic/1354094605706.jpg" width="158" onerror="parentNode.style.display='none'"></p>
+                     <span style="padding-left:28px;"><font style="font-weight:bold;">国家大剧院管弦乐团</font></span><br><p><font face="宋体">国家大剧院管弦乐团是中国国家表演艺术中心的常驻乐团。<br>　　新世纪的北京，历史气度和当代活力彼此交织，也滋育了国家大剧院管弦乐团全新的音乐精神和远大的音乐视界。来自中国及海外的近百名音乐家以对音乐与生俱来的热情、专注和创新精神，去践行音乐中永无止境的给予、智慧和精进，为北京及中国新式音乐生活的塑造、为演绎和传递艺术的美好与光明而倾尽心力。<br>　　同他们一起经历这个过程的，有全世界最优秀的音乐大师，包括：指挥家洛林·马泽尔、克里斯托弗·艾森巴赫、弗拉基米尔·阿什肯那齐、根特·赫比希、克里斯蒂安·雅尔维、耶欧·莱维、谭利华、张国勇等，钢琴家鲁道夫·布赫宾德、郎朗、史蒂芬·科瓦塞维奇、王羽佳、陈萨等，大提琴家王健等，小提琴家宁峰、小号家艾莉森·巴尔松等，歌唱家普拉西多·多明戈、里奥·努奇、和慧、沈洋等。马泽尔曾评价他们“富有激情，全心投入，实力非同一般”，艾森巴赫则认为他们已是“亚洲最优秀乐团之一”。<br>　　作为中国最优秀的两栖乐团，他们既被广泛评论为中国歌剧最高音乐造诣的代表者，也在音乐厅的舞台上有着熠熠生辉的表现。<br>　　在《罗恩格林》、《漂泊的荷兰人》、《奥赛罗》、《纳布科》、《托斯卡》、《图兰朵》、《茶花女》、《卡门》等众多世界级的国家大剧院歌剧制作中，他们出色的音乐演绎已经是其中最重要的标志之一。2013/2014演出季，他们将继续奉献《费加罗的婚礼》、《奥涅金》、《阿依达》等作品。<br>　　2011年，他们在国家大剧院全套马勒纪念音乐会中的表现令人瞩目，2012年在艾森巴赫的指挥下成为唯一入选《音乐周报》年度十大音乐会的中国乐团，2013年在吕嘉带领下开启全套贝多芬之旅，而马泽尔指挥的瓦格纳《无词指环》被马泽尔认为“作品诞生25年来最完美的演绎”。心怀对当代音乐的巨大热情，他们活跃在北京现代音乐节等事件中，还相继上演吉雅·坎切利、武满彻等作曲家的作品，并于2013年世界首演了奥古斯塔·里德·托马斯、卡列维·阿霍、鲁多维科·艾奥迪、瑞秋·波特曼等10位作曲家的新作，更通过国家大剧院青年作曲家计划推动中国新一代作曲家的成长。<br>　　作为极具时代精神的音乐使者，他们不仅通过周末音乐会、艺术沙龙和在学校、社区、医院、博物馆等开设的室内乐活动，将无数观众带入美妙的音乐世界，更有计划的国际巡演，将当代中国的艺术活力传播到世界各地。2011年，他们在韩国首尔艺术中心上演《图兰朵》。2012年由艾森巴赫率领参加德国石荷州、基辛根等音乐节，由陈佐湟率领赴柏林、纽伦堡等地成功上演音乐会，并在澳洲悉尼歌剧院举办音乐会。2013年，吕嘉将率团赴澳门、新加坡、首尔举行亚洲巡演。<br>　　国家大剧院音乐艺术总监陈佐湟，是国家大剧院管弦乐团的创建者之一，也是乐团的首任首席指挥。2012年，陈佐湟荣膺桂冠指挥，吕嘉出任首席指挥，并由袁丁担任助理指挥。吕嘉在交响作品和歌剧领域均造诣深厚，曾任意大利维罗纳歌剧院音乐艺术总监、西班牙特内里费交响乐团音乐总监，同时也是中国澳门乐团现任艺术总监。 </font></p></td>
+
+					  </tr>
+                     </tbody></table>
+				   </div>
+				   
+				   </div>
+				   <script language="javascript">
+				   	var imgErrArr = document.getElementsByName("perImaP2");
+					var tempErr = document.getElementById("tuantiP");
+					var tuantiTP = tempErr.getElementsByTagName("p");
+					
+					for(var i=0;i<imgErrArr.length;i++){
+						if(imgErrArr[i].src.replace("/module/performancemanager/manager/images/artist/","") == ""){
+							imgErrArr[i].style.display="none";
+							imgPErrArr[i].style.display="none";
+						}else{
+						tuantiTP[i].style.paddingRight="15";
+						}
+					}
+				   </script>
+				   </td>
+				   <script language="javascript">
+				   var yctt = document.getElementById("yctt");
+						var td4 = document.getElementById("td4");
+						var ycttstr="<SPAN";
+						if(yctt.innerHTML.toUpperCase().indexOf(ycttstr)>=0){
+							td4.style.display = "";
+						}
+				   </script>
+                    </tr>
+                  </tbody></table>
+				 
+				  </td>
+                </tr>
+              </tbody></table>
+			  
+			  <!--曲目-->
+			  <style type="text/css">
+			  .qmtable{}
+			  </style>
+			   <table width="720" border="0" cellspacing="0" cellpadding="0" id="table5" style="display: none; ">
+                <tbody><tr>
+                  <td align="left" valign="top">
+				  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tbody><tr>
+                      <td align="left" valign="top" class="pad_left1" id="qmxx">
+			
+				  <div style="width:720px; float:left; display:inline;">
+				   <!--如果在内容里发这块隐藏-->
+				    <table class="qmtable" width="100%" border="0" cellspacing="0" cellpadding="0" id="qumuTr" style="">					
+                       <tbody><tr>
+                         <td valign="top" class="f14_black2" style="padding-left:30px;">
+<table width="654" border="0" cellspacing="0" cellpadding="0">
+   <tbody><tr>
+    <td align="left" valign="top" style="font-size:14px;" id="caodan1"></td>
+    <td width="290" align="left" valign="top" class="line_h24" id="caodan2"><br></td>
+  </tr>
+   <tr>
+    <td align="left" valign="top" class="line_h24" id="caodan3"></td>
+    <td width="290" align="left" valign="top" class="line_h24" id="caodan4"></td>
+  </tr>
+   <tr>
+    <td align="left" valign="top" class="line_h24" id="caodan5"></td>
+    <td width="290" align="left" valign="top" class="line_h24" id="caodan6"></td>
+  </tr>
+</tbody></table>
+</td>
+     </tr>
+</tbody></table>
+   <!--如果在内容里发这块隐藏-->
+				     <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tbody><tr>
+					    <td align="left" valign="top">
+					 <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                       <tbody><tr>
+                         <td align="left" valign="top" class="line_h24 f14_black2" style="text-indent:28px;"><p><strong>精彩曲目赏析：<br></strong>　　<font face="宋体"><strong>《卡门》序曲　　　　　　　　　　　　　　　　</strong><u><font color="#0909f7"><a href="http://ncpa-classic.cntv.cn/2012/12/06/VIDA1354775652137644.shtml#041c426b312c44d69996c50e8d85d8ee" target="_blank">点击试听<br></a></font></u>　　这是经常在音乐会上单独演奏的著名前奏曲，又被称为“斗牛士进行曲”，即使你从未听过歌剧，听到《卡门》的序曲也会觉得格外熟悉。序曲为A大调，四二拍子，回旋曲式，它在全剧的一开始就立刻把观众带到辉煌壮观的斗牛场面之中。整部序曲都建立在具有尖锐对比的形象之上，以华丽、紧凑、引人入胜的音乐表现着歌剧的主要内容。它集中了歌剧内最主要的一些旋律，而且使用明暗对比的效果将歌剧的内容充分地表现了出来，主题选自歌剧最后一幕斗牛士上场时的音乐。<br>　　</font><font face="宋体"><strong>爱情像一只自由的鸟儿（《哈巴涅拉舞曲》）　　</strong><u><font color="#0909f7"><a href="http://ncpa-classic.cntv.cn/2012/10/26/VIDA1351240138265677.shtml#b94692ff59da4812aaa009274306b960" target="_blank">点击试听<br></a></font></u>　　这段深入人心的旋律根据一段西班牙民谣，时常被用来为舞蹈作品配乐。剧中，卡门向着对她毫不关心的唐·何塞唱起这首歌，听起来十分放荡不羁，挑逗性十足。行板、d小调转F大调、2/4拍子，充分表现出卡门豪爽、奔放而富有神秘魅力的形象。据传作曲家为了达到能很好刻画人物性格特征，曾对这首歌曲先后修改了十三次才最后完成。连续向下滑行的乐句不断反复，调性游移于同名大小调之间，八度内的中低音区旋律进行，以及一系列三连音运用等，把整个曲调的线条表现的生硬而富有个性，映衬出卡门的桀骜不驯和放荡不羁，正如卡门在歌曲中所唱到一样，她就象一只自由的小鸟，想要捉住驯服她则是自寻烦恼。<br>　　</font><font face="宋体"><strong>在塞维利亚城墙边　　　　　　　　　　　　　　</strong><u><font color="#0909f7"><a href="http://ncpa-classic.cntv.cn/2012/01/18/VIDA1326856201096237.shtml#16ad51135f3649b9aad47ab71b9427a9" target="_blank">点击试听<br></a></font></u>　　这是《卡门》第一幕中另一首刻画卡门形象、推动故事发展的重要唱段。桀骜不驯的卡门为了让唐·何塞从牢房里释放她，充满诱惑地唱到：在塞维利亚老城墙边有个叫“野百合”酒馆，我会在那里等你……作品以鲜明活泼的节奏、热情而又带有几分野气的旋律，进一步展示了卡门泼辣的性格。<br>　　</font><font face="宋体"><strong>花之歌　　　　　　　　　　　　　　　　　　　</strong><u><font color="#0909f7"><a href="http://ncpa-classic.cntv.cn/2012/12/04/VIDA1354587728868133.shtml#893559c98e2a42c0ab999605db1f8ec8" target="_blank">点击试听<br></a></font></u>　　这是表现唐·何塞向卡门讲述他在狱中的思念和爱恋时所唱的一首咏叹调。这首咏叹调是降D大调，4/4拍，小行板，在结构上它不同于通常的咏叹调采取对称的写法，而顺着思绪的发展，源源不断的倾吐主人公的心声。乐句没有重复，宛如是用旋律织出的一张延绵不断的音乐网。歌曲在旋律开始八小节之后移高了半个调，成为D大调，富有意境地表现出唐何塞对甜蜜爱情的回忆。之后歌曲表现的内容又回到现实之中，旋律转回到原来的降D大调。中段的音乐在情绪上有所改变，音乐显得活泼了许多，唐何塞向卡门讲述他在狱中的想法，坦率地说出他曾一度的恨她，骂她，可是她这个人却深深地占据了他的整个心，作曲家用这种非常具有抒情性的音乐，把唐何塞细腻微小的心理变化给体现出来，推动戏剧的发展。<br>　　</font><font face="宋体"><strong>没什么可以害怕<br></strong>　　米凯拉为了寻找被卡门抢走的未婚夫，不怕路途艰险，来到山上找他时唱出了这首咏叹调，把一个单纯、传统农家少女的爱、憎、痛苦和期望表现得细致入微。<br>　　这首咏叹调是C小调，9/8拍，速度是很慢的小行板，开始有两小节短小的前奏，接着是婉转朴实的歌唱，表现出米凯拉历尽千辛万苦，终于找到唐·何塞的喜悦心情，同时又因事情的发展无法预料，又带有几分恐惧和矛盾的心情。之后经过两小节的间奏，音乐表现的情绪更加激动，这时旋律出现了该咏叹调的最高音，表现米凯拉的恐惧心情已经达到最高点，而后随着音乐转入G大调，旋律的情调也顿时明朗了许多，表现一种米凯拉祷告上帝，心中得到安慰，并产生一股力量的情形。在前面刚刚表现米开拉心情的两种情绪对比，音乐重复了一次，最后咏叹调是在米凯拉祷告上帝，心情得到安慰的明朗的大调音乐上结束唱段。<br>　　</font><font face="宋体"><strong>斗牛士之歌　　　　　　　　　　　　　　　　　</strong><u><font color="#0909f7"><a href="http://ncpa-classic.cntv.cn/2012/08/29/VIDA1346211727941653.shtml#f17d4b13acb0493580935b4593f18a4e">点击试听</a><br></font></u>　　作曲家在塑造斗牛士埃斯卡米洛时，用到一种雄浑有力，英雄式进行曲风格的音乐。他的著名唱段《斗牛士之歌》在情绪上慷慨激昂，节奏上铿锵有力，充分表现出斗牛士的勇敢、坚毅、潇洒和雄浑气慨。<br>　　歌曲分为三个部分，第一部分降A大调，4/4拍，带有朗诵调性质，曲调一开雄壮有力，表达了斗牛士对群众热情欢迎和邀请的感谢，接着是他在斗牛场上如何机智勇敢的应付紧张而惊险的斗牛场面。第二部分转到F大调，音乐一方面把斗牛士的英勇自豪和复杂心理状态作了进一步描绘，另一方面还表达了斗牛士在这遇到吉普塞姑娘卡门，被卡门的美貌所吸引，征服，心中充满了爱恋的情形。第三部分一开始是群众加入的合唱，然后是卡门和她的女友对斗牛勇士的崇拜，以及倾吐她们对斗牛士的爱慕之心。《斗牛士之歌》其实是斗牛士的英雄赞歌和凯旋进行曲，作曲家恰如其分的刻画出一个自命不凡，风流倜傥，飒爽英姿的斗牛士形象。</font></p></td>
+                       </tr>
+                        </tbody></table></td>
+					  </tr>
+                     </tbody></table>
+				   </div>
+				   
+			      <script language="javascript">
+					   		/*for(var i=1;i<7;i++){
+								var obj = document.getElementById("caodan"+i);;
+								if(typeof(obj) != "undefined" && obj != null){
+									if(obj.innerText != ""){
+										document.getElementById("qumuTr").style.display="block";
+									}
+								}
+							}	*/			
+							
+							
+							var tableqm = $(".qmtable");		
+							for(var i=0;i<tableqm.length;i++){
+								if(tableqm[i].innerText != ""){
+									tableqm[i].style.display="";
+								}
+							}	
+					   </script>
+				   </td>
+				   <script language="javascript">
+				   var qmxx = document.getElementById("qmxx");
+						var td5 = document.getElementById("td5");
+						//alert(qmxx.innerText);
+						if(qmxx.innerHTML.toUpperCase().indexOf("<DIV")>=0){
+							td5.style.display = "";
+						}
+				   </script>
+                    </tr>
+                  </tbody></table>			 
+			  </td>
+                </tr>
+              </tbody></table>
+			   <!--剧情-->
+			  <table width="720" border="0" cellspacing="0" cellpadding="0" id="table6" style="display: none; ">
+                <tbody><tr>
+                  <td align="left" valign="top" class="f14_black2 pad_left_r15">
+				  
+                    <div class="line_h24 f14_black2" style="display:inline;text-indent:28px;" id="jqjs"><p>故事发生在<font face="Calibri">1860</font><font face="宋体">年的西班牙塞维利亚。一个美丽而倔强的吉卜赛姑娘——烟厂女工卡门在一次和其他女工的斗殴中遭遇了骑兵队班长堂·何塞。本欲逮捕卡门的堂·何塞被她野性的美貌和桀骜不驯的气质所吸引，不但放走了卡门，还与她坠入情网。在卡门的诱惑下，堂·何塞加入了卡门所在的吉普赛走私贩行列，与卡门一起过上了漂泊的生活。但好景不长，卡门后来又爱上了意气风发斗牛士埃斯卡米罗，堂·何塞苦苦哀求她回心转意，但被卡门拒绝了。堂·何塞试图阻挡卡门去找她的新欢。卡门忍无可忍，将原来堂·何塞送给她的戒指从手上摘下，狠狠地丢在地上。堂·何塞用藏在身上的短剑刺死了卡门，而后坦白了自己的罪行。</font> </p></div>
+					</td>
+					<script language="javascript">
+						var jqjs = document.getElementById("jqjs");
+						var td6 = document.getElementById("td6");
+						if(jqjs.innerText!=""){
+							td6.style.display = "";
+						}
+					</script>
+                </tr>
+              </tbody></table>
+			  
+			 
+			  <!--分场演员表-->
+			  <table width="720" border="0" cellspacing="0" cellpadding="0" id="table7" style="display: none; ">
+                <tbody><tr>
+                  <td align="left" valign="top" class="f14_black2 pad_left_r15">
+                    <div class="line_h24 f14_black2" style="display:inline;" id="fcyyb"></div>				
+					</td>
+					
+                </tr>
+              </tbody></table>
+			  <script language="javascript">
+			  //
+			  	function dotran(str) {
+					//str = str.replace('"','//"',str);
+					var str=str.replace(new RegExp("\r\n","gm"),"");
+					//var str=str.replace(new RegExp("\"","gm"),"\'"); 
+					return str;
+    			}
+				function getNextAjaxMethod(){
+					var url = "/module/performancemanager/manager/ajaxactor.jsp?id=864170&"+new Date().getTime();
+					getAjaxRequestTextOne(url, writeActor);
+				} 
+				function writeActor(ops){				
+				ops = dotran(ops);
+
+					var json = eval(ops);	
+					var zujstr = "";
+					for(var i = 0; i < json.length; i ++){
+						if(json[i].zimg != null && typeof(json[i].zimg) != "undefined" && json[i].zimg != ""){
+							zujstr +='<div style="width:720px;float:left; clear:both"><table width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td valign="top" class="line_h24 f14_black2"><p  style="width:auto; float:left; padding-bottom:3px;"><img name="perImg"  style="display:"  src="/module/performancemanager/manager/images/zhihui/'+json[i].zimg+'" width="158" onerror="parentNode.style.display=\"none\"" /></p><span style="padding-left:28px;"><font style="font-weight:bold;">'+json[i].zname+'</font>&nbsp;'+json[i].zspe+'</span><br />'+json[i].zcontent+'</td></tr></table></div>';
+						}else{
+						zujstr +='<div style="width:720px;float:left; clear:both"><table width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td valign="top" class="line_h24 f14_black2"><p  style="width:auto; float:left; padding-bottom:3px;"></p><span style="padding-left:28px;"><font style="font-weight:bold;">'+json[i].zname+'</font>&nbsp;'+json[i].zspe+'</span><br />'+json[i].zcontent+'</td></tr></table></div>';
+						}	
+							
+					}
+					document.getElementById("fcyyb").innerHTML = zujstr;
+					var fcyyb = document.getElementById("fcyyb");
+					var td7 = document.getElementById("td7");
+					if(fcyyb.innerText != ""){
+						td7.style.display = "";
+					}
+				}
+			  	
+			  </script>
+			  <!--其他图片-->
+			  <table width="720" border="0" cellspacing="0" cellpadding="0" id="table8" style="display: none; ">
+                <tbody><tr>
+                  <td align="left" valign="top" class="f14_black2 pad_left_r15">
+				 
+                    <div class="line_h24 f14_black2" style="display:inline;" id="qttp"></div>
+				<script language="javascript">
+						var qttp = document.getElementById("qttp");
+						var td8 = document.getElementById("td8");
+						if(qttp.innerText != ""){
+							td8.style.display = "";
+						}
+					</script>
+					</td>
+                </tr>
+              </tbody></table>
+			  
+			  <!--视频宣传片-->
+
+			  <table width="720" border="0" align="center" cellpadding="0" cellspacing="0" id="table9" style="display: none; ">
+
+                <tbody><tr>
+
+                  <td align="left" valign="top" class="f14_black2" id="xgspTd">
+
+				  
+
+                 <!-- <div class="line_h24 f14_black2" id="xgsptp" style="display:inline; float:left; width:300px; margin-left:15px; margin-right:15px;" align="center">-->
+
+					<script type="text/javascript">
+
+//							//var swf_width=480;
+
+//							//var swf_height=320;
+
+//							// 2011-12-5 视频宣传片改为相关视频。大小改为原来一半，需显示一个视频 三个小图
+
+//							var swf_width=300;
+
+//							var swf_height=200;
+
+//							var texts="";
+
+//							var filepath = "";
+
+//							var filepathArr;
+
+//							var filesArr;
+
+//							var noteArr;
+
+//							if(filepath!=""){
+
+//								var td9 = document.getElementById("td9");
+
+//								td9.style.display = "";
+
+//								filepathArr = filepath.split("@||@");
+
+//								filesArr = filepathArr[0].split(",");
+
+//								if(filepathArr.length>1){
+
+//									noteArr = filepathArr[1].split(",");
+
+//								}
+
+//								if(filesArr!=null){
+
+//									for(var i=0;i<filesArr.length;i++){
+
+//										var files = filesArr[i];
+
+//										if(files.indexOf("/")<0){
+
+//											files = "/module/performancemanager/manager/images/shipin/"+files;
+
+//										}
+
+//										//输出视频
+
+//										document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="'+ swf_width +'" height="'+ swf_height +'">');
+
+//										document.write('<param name="movie" value="/module/media/videotool/vcastr22.swf"><param name="quality" value="high">');
+
+//										document.write('<param name="menu" value="false"><param name="allowFullScreen" value="true" />');
+
+//										document.write('<param name="FlashVars" value="vcastr_file='+files+'&vcastr_title='+texts+'">');
+
+//										document.write('<param name="wmode" value="opaque" />');
+
+//										document.write('<embed src="/module/media/videotool/vcastr22.swf" allowFullScreen="true" FlashVars="vcastr_file='+files+'&vcastr_title='+texts+'" menu="false" quality="high" width="'+ swf_width +'" height="'+ swf_height +'" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />'); document.write('</object>');
+
+//										
+
+//										document.write('<br>');
+
+//										//输入视频介绍
+
+//										if(noteArr[i]!=null){
+
+//											document.write(noteArr[i]);
+
+//										}
+
+//									}
+
+//								}
+
+//							}
+
+//						</script>
+
+               <!--     </div>-->
+
+					</td>
+
+                    <!---相关视频图片开始----->
+
+                    <script language="javascript">
+
+					//将字符串转化为json对象
+
+					function strToJson(str){  
+
+  					    var json = (new Function("return " + str))();  
+
+   			 			return json;  
+
+					}  
+
+					
+
+						//得到相关视频并打印到页面
+
+						
+
+						function getNextAjaxVideo(){
+							var videoUrl = "/module/performancemanager/utilajaxvideo.jsp?action=getpvideos&infoid=864170&shownum=6&date="+new Date().getTime();
+							getAjaxRequestTextOne(videoUrl,writeVideoInfo);
+						}
+						
+
+						function writeVideoInfo(pvideos){
+							var pvideos = strToJson(pvideos);
+							var XGSP = "";
+							if(typeof(pvideos) != "undefined" && pvideos != null){
+							for(var vlength=0;vlength<pvideos.length;vlength++){
+
+								XGSP +='<div class="linkf12_black f14_black2" id="xgsptp" style="display:inline;float:left;  width:230px; margin-left:5px; margin-right:5px;" align="center"><table width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td align="center"><a target="_blank" href="'+pvideos[vlength].vurl+'"><img src="'+pvideos[vlength].vpic+'" width="230" height="165" /></a></td></tr><tr><td align="center" height="24"><a target="_blank" href="'+pvideos[vlength].vurl+'">'+pvideos[vlength].vdesc+'</a></td></tr></table></div>';	
+
+							}
+							
+							var xgsptp = document.getElementById("xgsptp");
+							var td9 = document.getElementById("td9");
+
+							if(xgsptp!=""){
+	
+								td9.style.display = "";
+	
+							}else{
+	
+								//alert(11111);
+	
+								document.getElementById("table9").style.display = "none";
+	
+							}
+	
+								document.getElementById("xgspTd").innerHTML=document.getElementById("xgspTd").innerHTML+XGSP;
+
+							}
+							}
+
+					</script>
+					<!---相关视频图片结束---->
+
+              </tr></tbody></table>
+			  
+			  <!--演出回顾-->
+			  <table width="720" border="0" cellspacing="0" cellpadding="0" id="table10" style="display: none; ">
+                <tbody><tr>
+                  <td align="left" valign="top" class="f14_black2 pad_left_r15">
+				 
+                    <div class="line_h24 f14_black2" style="display:inline;" id="ychg"></div>
+					
+					</td>
+					<script language="javascript">
+						var ychg = document.getElementById("ychg");
+						var td10 = document.getElementById("td10");
+						if(ychg.innerText != ""){
+							td10.style.display = "";
+						}
+					</script>
+                </tr>
+              </tbody></table>
+			  
+			</div>  
+			  </td>
+          </tr>
+		  <tr>
+		    <td height="24" align="right" class="linkf12_black pad_r10">
+			【<a href="javascript:fontZoom(16)">大</a> <a href="javascript:fontZoom(14)">中</a> <a href="javascript:fontZoom(12)">小</a>】
+						 <script>
+//RS Use
+function fontZoom(size){
+	var www_zzjs_net = document.getElementById('www_zzjs_net');
+	var sizeArr = www_zzjs_net.getElementsByTagName("P");
+	var sizeDivArr = www_zzjs_net.getElementsByTagName("div");
+	var sizeSpanArr = www_zzjs_net.getElementsByTagName("span");
+	for(var i=0;i<sizeArr.length;i++){
+			sizeArr[i].style.fontSize = size+'px';
+	}
+	for(var i=0;i<sizeDivArr.length;i++){
+		sizeDivArr[i].style.fontSize = size+'px';
+	}
+	for(var i=0;i<sizeSpanArr.length;i++){
+		sizeSpanArr[i].style.fontSize = size+'px';
+	}
+}
+
+function getShowword(){
+	var table1 = document.getElementById("td1");
+	var table2 = document.getElementById("td2");
+	var table3 = document.getElementById("td3");
+	var table4 = document.getElementById("td4");
+	var table5 = document.getElementById("td5");
+	var table6 = document.getElementById("td6");
+	var table7 = document.getElementById("td7");
+	var table8 = document.getElementById("td8");
+	var table9 = document.getElementById("td9");
+	var table10 = document.getElementById("td10");
+	var table11 = document.getElementById("td11");
+	if(table1.style.display=="none" && table2.style.display=="none"  && table3.style.display=="none" && table4.style.display=="none" && table5.style.display=="none" && table6.style.display=="none" && table7.style.display=="none" && table8.style.display=="none" && table9.style.display=="none" && table10.style.display=="none" && table11.style.display=="none"){
+		var showword = document.getElementById("showword");
+		showword.style.display = "";	
+	}
+
+}
+getShowword();
+</script>
+			</td>
+		  </tr>
+        </tbody></table>
+		 <!--赞助商LOGO-->
+			  <table width="720" border="0" cellspacing="0" cellpadding="0" id="table11" style="display:none;">
+                <tbody><tr>
+                  <td align="center" valign="top" class="f14_black2 pad_left_r15">
+				  
+                    <div class="line_h24 f14_black2" style="display:inline;" id="zzslogo"></div>
+					<script language="javascript">
+						var zzslogo = document.getElementById("zzslogo");
+						var td11 = document.getElementById("td11");
+						if(zzslogo.innerHTML != ""){
+							td11.style.display = "";
+						}
+					</script>					
+					</td>
+                </tr>
+              </tbody></table>
+			  
+			  
+		<table width="100%" cellpadding="0" cellspacing="0" border="0" align="center" class="bg_5" id="kg1" style="display: none; ">
+  <tbody><tr>
+    <td height="5"></td>
+  </tr>
+</tbody></table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" id="newtb1" style="display: none; ">
+  <tbody><tr>
+    <td height="30" align="left" class="bg_blue2 f16_whlie pad_left15">相关演出</td>
+  </tr>
+  <tr>
+    <td align="center" valign="top" class="whlie_bg"><table width="725" border="0" cellspacing="0" cellpadding="0" class="xgyc_jmxx_bg mar_t15">
+				  
+                  </table></td>
+  </tr>
+</tbody></table>
+<table width="100%" cellpadding="0" cellspacing="0" border="0" align="center" class="bg_5" id="kg2" style="display: none; ">
+  <tbody><tr>
+    <td height="5"></td>
+  </tr>
+</tbody></table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" id="newtb2" style="display: none; ">
+  <tbody><tr>
+    <td height="30" align="left" class="bg_blue2 f16_whlie pad_left15">相关活动</td>
+  </tr>
+  <tr>
+    <td align="center" valign="top" class="whlie_bg"><table width="725" border="0" cellspacing="0" cellpadding="0" class="xgyc_jmxx_bg mar_t15">
+        
+      </table></td>
+  </tr>
+</tbody></table>
+<table width="100%" cellpadding="0" cellspacing="0" border="0" align="center" class="bg_5" id="kg3" style="display: none; ">
+  <tbody><tr>
+    <td height="5"></td>
+  </tr>
+</tbody></table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" id="newtb3" style="display: none; ">
+  <tbody><tr>
+    <td height="30" align="left" class="bg_blue2 f16_whlie pad_left15">相关新闻</td>
+  </tr>
+  <tr>
+    <td align="center" valign="top" class="whlie_bg" style="padding-top:5px; padding-bottom:5px;"><table width="725" border="0" cellspacing="0" cellpadding="0">
+        
+      </table></td>
+  </tr>
+</tbody></table>
+<table width="100%" cellpadding="0" cellspacing="0" border="0" align="center" class="bg_5" id="kg4" style="display: none; ">
+  <tbody><tr>
+    <td height="5"></td>
+  </tr>
+</tbody></table>
+
+
+
+<table style="display: none; " width="100%" border="0" cellspacing="0" cellpadding="0" id="newtb4">
+  <tbody><tr>
+    <td height="30" align="left" class="bg_blue2 f16_whlie pad_left15">相关展览</td>
+  </tr>
+
+
+  <tr>
+    <td align="center" valign="top" class="whlie_bg"><table width="725" border="0" cellspacing="0" cellpadding="0" class="xgyc_jmxx_bg mar_t15">
+        
+      </table></td>
+  </tr>
+</tbody></table>
+
+
+<table style="display: none; " width="100%" cellpadding="0" cellspacing="0" border="0" align="center" class="bg_5" id="kg5">
+  <tbody><tr>
+    <td height="5"></td>
+  </tr>
+</tbody></table>
+
+<table style="display: none; " width="100%" border="0" cellspacing="0" cellpadding="0" id="newtb5">
+                <tbody><tr>
+                  <td height="30" align="left" class="bg_blue2 f16_whlie pad_left15">相关视频</td>
+                </tr>
+                <tr>
+                  <td align="center" valign="top" class="whlie_bg" style="padding-top:5px; padding-bottom:5px;">
+				  <table width="725" border="0" cellspacing="0" cellpadding="0">
+
+ 
+
+					
+                  </table></td>
+                </tr>
+              </tbody></table>
+<script language="javascript">
+var xgyc=document.getElementsByName("xgyc");
+var xghd=document.getElementsByName("xghd");
+var xgwz=document.getElementsByName("xgwz");
+var xgzl=document.getElementsByName("xgzl");
+var xgsp=document.getElementsByName("xgsp");
+if(xgyc.length==0){
+	document.getElementById("kg1").style.display="none";
+	document.getElementById("newtb1").style.display="none";
+}
+if(xghd.length==0){
+	document.getElementById("kg2").style.display="none";
+	document.getElementById("newtb2").style.display="none";
+}
+if(xgwz.length==0){
+	document.getElementById("kg3").style.display="none";
+	document.getElementById("newtb3").style.display="none";
+}
+if(xgzl.length==0){
+	document.getElementById("kg4").style.display="none";
+	document.getElementById("newtb4").style.display="none";
+}
+if(xgsp.length==0){
+	document.getElementById("kg5").style.display="none";
+	document.getElementById("newtb5").style.display="none";
+}
+</script>
+<script language="javascript">
+
+//根据utn返回的订票状态改订票按钮 utnIds 未结束剧目的id串
+var utnStateHrefArr = document.getElementsByName("utnStateHref");
+var idreg = /[^/]+.shtml/;
+if(typeof(utnStateHrefArr) != "undefined" && utnStateHrefArr != null){
+for(var i=0;i<utnStateHrefArr.length;i++){
+	utnIds += utnStateHrefArr[i].href.match(idreg)[0].replace(".shtml","")+",";
+}	
+}
+if(utnIds.indexOf(",") != -1 ){
+	utnIds = utnIds.substring(0,utnIds.length-1);
+}
+if(utnIds != ""){
+var getUtnStateUrl = "/module/performancemanager/utilajax.jsp?action=getutnstate&utnids="+utnIds+"&temDate="+new Date().getTime();
+getAjaxRequestText(getUtnStateUrl,setUtnState);
+
+}
+function setUtnState(stateStr){
+	var imgArr = document.getElementsByName("utnStateImg");
+	var utnArr = strTrim(stateStr).split(",");
+	if(typeof(imgArr) != "undefined" && imgArr != null){
+		for(var i=0;i<imgArr.length;i++){
+			if(utnArr[i] == "0"){
+				imgArr[i].src = "/templates/images/button/button_wkp.gif";
+			}
+		}
+	}
+}
+</script>
+
+		
+					  
+			  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody><tr>
+    <td height="5" class="bg_5"></td>
+  </tr>
+</tbody></table>
+			  
+			  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tbody><tr>
+                  <td height="30" align="left" class="bg_blue2 f16_whlie pad_left15"><a name="ytop"></a>订票信息</td>
+                </tr>
+                <tr>
+                  <td align="center" valign="top" class="whlie_bg"><a name="piao" id="piao"></a>
+                    <table width="695" border="0" cellspacing="0" cellpadding="0" class="mar_bot10">
+                      <tbody><tr>
+                        <td align="left" valign="top">
+						<a name="rlmaodian"></a>
+						<div id="ifload2" align="center" style="display: none; ">数据加载中...</div>
+						<div id="riDiv1"><iframe src="http://ticket.chncpa.org/unit.jsp?productId=864170" name="unitIframe" id="unitIframe" width="100%" height="390" scrolling="no" border="0" marginwidth="0" marginheight="0" hspace="0" vspace="0" frameborder="0" style=""></iframe></div>
+						<script language="javascript">
+						function getifLoad2(iframe){
+							var ifload2 = document.getElementById("ifload2");
+							iframe.style.display = "";
+							ifload2.style.display = "none";
+						}
+						var unitIframe = document.getElementById("unitIframe");
+						if (unitIframe.attachEvent){   
+							unitIframe.attachEvent("onload", function(){   
+								getifLoad2(unitIframe);   
+							});   
+						} else {   
+							unitIframe.onload = function(){   
+								getifLoad2(unitIframe);   
+							}
+						}   
+					</script>
+						</td>
+                      </tr>
+                      <tr>
+                        <td align="left" class="line_h24 f12_blue pad_t10"><span class="f12_red">*</span>因票品时效性，演出当天14:00为网上售票截止时间。其中演出4天之前在官网购票可选择送票上门或前台自取服务，演出前4天以内购票可选择网上支付并在演出当天前台自取服务。</td>
+                      </tr>
+                      <tr>
+                        <td align="left" class="line_h24 f12_black1">*以上内容包括演出（时间、节目及演出票价等）可能有变更，以最终演出为准，仅供参考。 </td>
+                      </tr>
+                    </tbody></table>
+					
+					
+					</td></tr>
+              </tbody></table>
+		</td>
+        <td width="5"></td>
+        <td width="223" valign="top" class="xwzx_bg">	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tbody><tr>
+            <td height="100" align="center" valign="top" class="xwzx_bg"><table width="203" border="0" cellspacing="0" cellpadding="0">
+              <tbody><tr>
+                <td valign="top" class="xian_line"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tbody><tr>
+                    <td align="left" valign="top" class="f16_blue1 pad_t7 pad_bot6">演出资讯</td>
+                    <td width="50" align="right" valign="top" class="pad_t15 linkf12_black"><a href="/ycgp/yczx/index.shtml">更多&gt;&gt;</a></td>
+                  </tr>
+                </tbody></table></td>
+              </tr>
+              <tr>
+                <td align="left" class="pad_t8">
+				<table width="100%" border="0" cellspacing="0" cellpadding="0">
+				
+                  <tbody><tr>
+                    <td height="24" align="left" class="linkf12_black line_h24 line_blue">
+					<a href="/cxdt/juyuannews/ycbd/2013-12-12/902834.shtml" target="_blank" title="话剧《致青春》：散场后请紧紧拥抱自己">话剧《致青春》：散场后请...</a>
+					</td>
+                  </tr>
+                  
+                  <tr>
+                    <td height="24" align="left" class="linkf12_black line_h24 line_blue">
+					<a href="/cxdt/juyuannews/ycbd/2013-12-11/902451.shtml" target="_blank" title="《卡门》再回国家大剧院">《卡门》再回国家大剧院</a>
+					</td>
+                  </tr>
+                  
+                </tbody></table>
+				</td>
+              </tr>
+            </tbody></table></td>
+          </tr>
+        </tbody></table>
+
+
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody><tr>
+    <td height="5" class="bg_blue1"></td>
+  </tr>
+</tbody></table>
+
+		
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+  <tbody>
+    <tr>
+      <td valign="top" height="175" align="center" class="xwzx_bg"><table width="203" cellspacing="0" cellpadding="0" border="0">
+          <tbody>
+            <tr>
+              <td valign="top" class="xian_line"><table width="100%" cellspacing="0" cellpadding="0" border="0">
+                  <tbody>
+                    <tr>
+                      <td valign="top" align="left" class="f16_blue1 pad_t7 pad_bot6">优惠专区</td>
+                      <td width="50" valign="top" align="right" class="pad_t15 linkf12_black"><a target="_self" href="/ycgp/yhhd/index.shtml">更多&gt;&gt;</a></td>
+                    </tr>
+                  </tbody>
+                </table></td>
+            </tr>
+            <tr>
+              <td align="left" class="pad_t8"><table width="100%" cellspacing="0" cellpadding="0" border="0">
+                  <tbody>
+                    
+                    <tr>
+                      <td height="24" align="left" class="linkf12_black line_h24 line_blue"><a href="http://www.chncpa.org/ycgp/jmxx/2013-09-25/869722.shtml" target="_blank" title="斯拉特金与里昂国立管弦乐团套票">斯拉特金与里昂国立管弦乐团套...</a></td>
+                    </tr>
+                    
+                    <tr>
+                      <td height="24" align="left" class="linkf12_black line_h24 line_blue"><a href="http://www.chncpa.org/ycgp/jmxx/2013-09-12/864170.shtml" target="_blank" title="大剧院制作歌剧《卡门》套票优惠">大剧院制作歌剧《卡门》套票优...</a></td>
+                    </tr>
+                    
+                    <tr>
+                      <td height="24" align="left" class="linkf12_black line_h24 line_blue"><a href="/ycgp/jmxx/2013-10-30/885400.shtml" target="_blank" title="大剧院原创歌剧《运河谣》套票优惠">大剧院原创歌剧《运河谣》套票...</a></td>
+                    </tr>
+                    
+                    
+                  </tbody>
+                </table></td>
+            </tr>
+          </tbody>
+        </table></td>
+    </tr>
+  </tbody>
+</table>
+
+
+ 		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+  <tbody><tr>
+
+    <td height="0" class="bg_blue1"></td>
+
+  </tr>
+
+</tbody></table>     
+
+
+			<div style="display:none"><script src="/cns/templates/js/inc_nknhxh.js" type="text/javascript"></script>
+<table width="223" border="0" cellspacing="0" cellpadding="0">
+          <tbody><tr>
+            <td align="center" valign="top" class="xwzx_bg" style="padding-bottom:2px;"><table width="203" border="0" cellspacing="0" cellpadding="0">
+              <tbody><tr>
+                <td align="left" valign="top" class="f16_blue1 pad_t7 xian_line pad_bot6">您可能会喜欢</td>
+              </tr>
+            
+              
+            </tbody></table>
+			
+	  <script type="text/javascript">
+		setTimeout("gettestxml()",1000) ;    //延迟加载;
+	  </script>
+	  <div id="divcokvalue"></div>
+              
+			
+			
+			</td>
+          </tr>
+        </tbody></table> </div>
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody><tr>
+    <td height="0" class="bg_blue1"></td>
+  </tr>
+</tbody></table>
+
+					  		 		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody><tr>
+    <td height="5" class="bg_blue1"></td>
+  </tr>
+</tbody></table>       
+					  <link rel="stylesheet" href="/templates/css/global.css"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <!--------------------------首页图片轮换开始------------------------------------> 
+                                              <script src="/templates/js/slides.min.jquery.js"></script> 
+                                              <script>
+                            $(function(){
+                                $('#slides').slides({
+                                    preload: true,
+                                    preloadImage: 'img/loading.gif',
+                                    play: 5000,
+                                    pause: 2500,
+                                    hoverPause: true,
+                                    animationStart: function(){
+                                        $('.caption').animate({
+                                            bottom:-35
+                                        },100);
+                                    },
+                                    animationComplete: function(current){
+                                        $('.caption').animate({
+                                            bottom:0
+                                        },200);
+                                        if (window.console && console.log) {
+                                            // example return of current slide number
+                                            console.log(current);
+                                        };
+                                    }
+                                });
+                            });
+                    </script>
+                                              
+                                              <script language="javascript"> 
+                                        var tempT = "";
+                                        
+                                    </script> 
+                                               
+                                              
+                                              <script language="javascript">
+                                        tempT += '<div><a target="_blank" href="/cns/subsite/xjwd2014/index.html"><img width="180" height="212" src="/uploadfiles/tpqhsy/1386137961741.jpg" /></a></div>'; 
+                                        </script> 
+                                               
+                                              
+                                              <script language="javascript">
+                                        tempT += '<div><a target="_blank" href="/cns/subsite/jdyyh201312/index.html"><img width="180" height="212" src="/uploadfiles/tpqhsy/1385618488876.jpg" /></a></div>'; 
+                                        </script> 
+                                               
+                                              
+                                              <script language="javascript">
+                                        tempT += '<div><a target="_blank" href="/cns/subsite/dyzm2013/index.html"><img width="180" height="212" src="/uploadfiles/tpqhsy/1384422168564.jpg" /></a></div>'; 
+                                        </script> 
+                                               
+                                              
+                                              <script language="javascript">
+                                        tempT += '<div><a target="_blank" href="/cns/subsite/ympyjh2013/index.html"><img width="180" height="212" src="/uploadfiles/tpqhsy/1380428828138.jpg" /></a></div>'; 
+                                        </script> 
+                                               
+                                              
+                                              <script language="javascript">
+                                        tempT += '<div><a target="_blank" href="http://www.chncpa.org/cns/subsite/qjjx2013/index.html"><img width="180" height="212" src="/uploadfiles/tpqhsy/1377598072377.jpg" /></a></div>'; 
+                                        </script> 
+                                               
+                                              
+                                              <script language="javascript">
+                                        tempT += '<div><a target="_blank" href="/cns/subsite/qnzqjjh2013/index.html"><img width="180" height="212" src="/uploadfiles/tpqhsy/1343201974560.jpg" /></a></div>'; 
+                                        </script> 
+                                               
+                                              
+                                              <script language="javascript">
+                                        tempT += '<div><a target="_blank" href="/cns/subsite/zzjm2013/index.html"><img width="180" height="212" src="/uploadfiles/tpqhsy/1362552593961.jpg" /></a></div>'; 
+                                        </script> 
+                                              
+                                              
+                                              <tbody><tr>
+                                                <td height="282" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                    
+                                                      <tbody><tr><td height="33" align="left" valign="top"><table width="201" border="0" align="center" cellpadding="0" cellspacing="0">
+                                                          <tbody><tr>
+                                                            <td height="33" valign="bottom" class="linkf16_blue pad_bot6 xian_line"><a href="#">特色活动</a></td>
+                                                          </tr>
+                                                        </tbody></table></td>
+                                                  </tr></tbody></table>
+                                                  <table width="100%" border="0" cellspacing="0" cellpadding="0" class="mar_t10">
+                                                    <tbody><tr> </tr>
+                                                    <tr> 
+                                                      
+                                                      <!--图片移动-->
+                                                      
+                                                      <td width="180" align="left" valign="top"><div class="tpqh_style">
+                                                          <div id="container">
+                                                            <div id="example">
+                                                              <div id="slides">
+                                                                <div id="picShowInfo" class="slides_container" style="overflow-x: hidden; overflow-y: hidden; position: relative; "><div class="slides_control" style="position: relative; width: 540px; height: 212px; left: -180px; "><div style="position: absolute; top: 0px; left: 180px; z-index: 0; "><a target="_blank" href="/cns/subsite/xjwd2014/index.html"><img width="180" height="212" src="/uploadfiles/tpqhsy/1386137961741.jpg"></a></div><div style="position: absolute; top: 0px; left: 180px; z-index: 0; display: none; "><a target="_blank" href="/cns/subsite/jdyyh201312/index.html"><img width="180" height="212" src="/uploadfiles/tpqhsy/1385618488876.jpg"></a></div><div style="position: absolute; top: 0px; left: 180px; z-index: 0; display: none; "><a target="_blank" href="/cns/subsite/dyzm2013/index.html"><img width="180" height="212" src="/uploadfiles/tpqhsy/1384422168564.jpg"></a></div><div style="position: absolute; top: 0px; left: 180px; z-index: 0; display: none; "><a target="_blank" href="/cns/subsite/ympyjh2013/index.html"><img width="180" height="212" src="/uploadfiles/tpqhsy/1380428828138.jpg"></a></div><div style="position: absolute; top: 0px; left: 180px; z-index: 0; display: none; "><a target="_blank" href="http://www.chncpa.org/cns/subsite/qjjx2013/index.html"><img width="180" height="212" src="/uploadfiles/tpqhsy/1377598072377.jpg"></a></div><div style="position: absolute; top: 0px; left: 180px; z-index: 0; display: none; "><a target="_blank" href="/cns/subsite/qnzqjjh2013/index.html"><img width="180" height="212" src="/uploadfiles/tpqhsy/1343201974560.jpg"></a></div><div style="position: absolute; top: 0px; left: 180px; z-index: 0; display: none; "><a target="_blank" href="/cns/subsite/zzjm2013/index.html"><img width="180" height="212" src="/uploadfiles/tpqhsy/1362552593961.jpg"></a></div></div></div>
+                                                                <script language="javascript">
+                                        document.getElementById("picShowInfo").innerHTML=tempT;
+                                    </script> 
+                                                                <a href="#" class="prev"><img name="Image25" src="/templates/images/but_left.jpg" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image25','','/templates/images/but_left_qh.jpg',1)"></a> <a href="#" class="next"><img name="Image26" src="/templates/images//but_right.jpg" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image26','','/templates/images/but_right_qh.jpg',1)" ;=""></a> <ul class="pagination"><li class="current"><a rel="0" href="#">1</a></li><li><a rel="1" href="#">2</a></li><li><a rel="2" href="#">3</a></li><li><a rel="3" href="#">4</a></li><li><a rel="4" href="#">5</a></li><li><a rel="5" href="#">6</a></li><li><a rel="6" href="#">7</a></li></ul></div>
+                                                            </div>
+                                                          </div>
+                                                        </div></td>
+                                                    </tr>
+                                                  </tbody></table></td>
+                                              </tr>
+                                              
+                                              <!--------------------------首页图片轮换结束------------------------------------>
+                     
+ 					  </tbody></table> 
+
+			  
+			  		 		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody><tr>
+    <td height="5" class="bg_blue1"></td>
+  </tr>
+</tbody></table>       
+ <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tbody><tr>
+            <td align="center" valign="top"><table width="203" border="0" cellspacing="0" cellpadding="0" class="mar_bot15">
+              <tbody><tr>
+                <td valign="top" class="xian_line"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tbody><tr>
+                    <td align="left" valign="top" class="f16_blue1 pad_t7 pad_bot6">快捷帮助</td>
+                    <td width="50" align="right" valign="top" class="pad_t15 linkf12_black"></td>
+                  </tr>
+                </tbody></table></td>
+              </tr>
+              <tr>
+                <td align="left" class="pad_t8"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+			
+                  <tbody><tr>
+                    <td align="left" valign="top" class="linkf12_black bzxx_line">
+				    <ul>
+					  <li><a href="/bzzx/gkyc/2011-03-05/53808.shtml">订票方式</a></li>
+					  <li><a href="/bzzx/gkyc/2011-03-05/53817.shtml">关于支付</a></li>
+					  <li><a href="/bzzx/gkyc/2011-03-05/53817.shtml">关于配送</a></li>
+					  <li><a href="/bzzx/gkyc/2011-03-05/53828.shtml">观演提示</a></li>
+					  <li><a href="/bzzx/gwzcyh/2011-03-10/55522.shtml">大剧院位置</a></li>
+					  <li><a href="/bzzx/gkyc/2011-03-10/55485.shtml">大客户购票</a></li>
+					</ul>
+				  
+				  </td>
+                  </tr>
+                 
+                </tbody></table></td>
+              </tr>
+            </tbody></table></td>
+          </tr>
+        </tbody></table>
+   
+		</td>
+      </tr>
+    </tbody></table></td>
+  </tr>
+</tbody></table>
+           
+          <script language="javascript">
+if(document.getElementById("ywdiv")!=null){
+document.getElementById("ywdiv").style.display="none";
+}
+if(document.getElementById("jmztdiv")!=null){
+document.getElementById("jmztdiv").style.display="none";
+}
+if(document.getElementById("jmzturl")!=null){
+document.getElementById("jmzturl").style.display="none";
+}
+if(document.getElementById("ywHref")!=null){
+document.getElementById("ywHref").style.display="none";
+}
+//if(document.getElementById("yxst")!=null){
+//document.getElementById("yxst").style.display="none";
+//}
+if(document.getElementById("ifload1")!=null){
+document.getElementById("ifload1").style.display="none";
+}
+var tdArr = document.getElementsByTagName("td");
+for(var i=0;i<tdArr.length;i++){
+	if(tdArr[i].innerHTML.indexOf("*官网购票优先便捷，尽享优惠98折起！") != -1 && tdArr[i].innerHTML.length<30){
+		tdArr[i].style.display="none";	
+	}	
+}
+if(document.getElementById("topIframe")!=null){
+/**document.getElementById("topIframe").style.height=140;**/
+}
+</script>
+<table width="983" border="0" cellspacing="0" cellpadding="0">
+            <tbody><tr>
+              <td width="396" align="left" valign="top"><img src="/templates/images/bot_hzhb.jpg" width="396" height="158" border="0" usemap="#Map"></td>
+              <td valign="top">
+			  <table width="100%" border="0" cellspacing="0" cellpadding="0" class="mar_t32">
+                <tbody><tr>
+                  <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tbody><tr>
+                      <td height="30" align="right" class="linkf14_whlie f14_whlie"><a href="/bzzx/index.shtml">帮助中心</a>&nbsp;|&nbsp;<a href="/cxdt/juyuannews/index.shtml">网站地图</a>&nbsp;|&nbsp;<a href="/zlxs/index.shtml">招贤纳士</a>&nbsp;|&nbsp;<a href="/lxwmbot/index.shtml">联系我们</a>&nbsp;|&nbsp;<a href="/yjfk/index.shtml">意见反馈</a>&nbsp;|&nbsp;  <a target="_blank" href="/rdjjyc/2013-07-10/528969.shtml">知识产权声明</a>&nbsp;|&nbsp;			  <a target="_blank" href="/rdjjyc/2013-07-10/528972.shtml">防伪声明</a></td>
+					  <td width="20">&nbsp;</td>
+                    </tr>
+                  </tbody></table></td>
+                </tr>
+                <tr>
+				  <td align="right" valign="top"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                    <tbody><tr>
+                  <td height="24" align="center" class="f12_whlie_2 linkf12_whlie_2">国家大剧院官方网站版权所有&nbsp;&nbsp;&nbsp;<a href="http://www.miibeian.gov.cn/" target="_blank">京ICP备05019833号</a>&nbsp;&nbsp;&nbsp;京公网安备110401300035号</td>
+                </tr>
+                 <tr>
+                  <td height="24" align="center" class="f12_whlie_2 linkf12_whlie_2">信息网络传播视听节目许可证号：<a href="http://www.chncpa.org/st.jpg" target="_blank">0111622</a></td>
+                </tr>
+				<tr>
+                  <td height="24" align="center" class="f12_whlie_2 linkf12_whlie_2">地址：中国北京市西城区西长安街2号　邮编：100031</td>
+                </tr>
+                  </tbody></table></td>
+				</tr>
+              </tbody></table></td>
+            </tr>
+</tbody></table>
+<script language="javascript">
+MM_preloadImages('/templates/images/ycsc.jpg','/templates/images/ysjl.jpg','/templates/images/yspj.jpg','/templates/images/but_left_qh.jpg','/templates/images/but_right_qh.jpg','/templates/images/nav/ycgp_qh.jpg','/templates/images/nav/yspj_qh.jpg','/templates/images/nav/cgyl_qh.jpg','/templates/images/nav/zxdt_qh.jpg','/templates/images/nav/zzyhd_qh.jpg','/templates/images/nav/jygl_qh.jpg','/templates/images/nav/gdyypd_qh.jpg','/templates/images/nav/hyjlb_qh.jpg');
+</script>
+
+<map name="Map" id="Map">
+<area shape="rect" coords="0,31,83,81" href="http://www.mercedes-benz.com.cn/" target="_blank">
+<area shape="rect" coords="89,30,165,84" href="http://www.boc.cn/index.html" target="_blank">
+<area shape="rect" coords="174,30,266,85" href="http://www.hnagroup.com/" target="_blank">
+<area shape="rect" coords="295,31,372,82" href="http://www.rolex.com" target="_blank">
+</map>
+
+<script type="text/javascript" src="/templates/inc/shareto_button.js" charset="utf-8"></script>
+
+<script type="text/javascript" src="/templates/inc/webstats_misc_tracker.js"></script>
+<noscript>&lt;img src="/templates/inc/webstats_misc_tracker.js?nojs=y" height=0 width=0 border=0 style="display: none"&gt;</noscript>
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fc0f83d11c5318938a003c0a00dcded64' type='text/javascript'%3E%3C/script%3E"));
+</script><script src=" http://hm.baidu.com/h.js?c0f83d11c5318938a003c0a00dcded64" type="text/javascript"></script>
+<script type="text/javascript" charset="utf-8" src="http://gate.looyu.com/46802/98161.js"></script><div id="doyoo_share" style="display:none;"></div><link rel="stylesheet" type="text/css" href="http://static.doyoo.net/110402/looyu.css?1205021"><script type="text/javascript" src="http://static.doyoo.net/110402/looyu.js?120618"></script>
+<!-- Gridsum tracking code begin. -->
+
+<script type="text/javascript">
+
+ (function(){
+
+  var s = document.createElement('script');
+
+  s.type = 'text/javascript';
+
+  s.async = true;
+
+  s.src = (location.protocol == 'https:' ? 'https://ssl.' : 'http://static.') + 'gridsumdissector.com/js/Clients/GWD-002230-464E3B/gs.js';
+
+  var firstScript = document.getElementsByTagName('script')[0];
+
+  firstScript.parentNode.insertBefore(s, firstScript);
+
+ })();
+
+</script>
+
+<!--Gridsum tracking code end. -->
+
+			  </td>
+            </tr>
+          </tbody></table>		</td>
+      </tr>
+    </tbody></table></td>
+  </tr>
+</tbody></table><img src="/webstats_misc_tracker.js?screen=1280x800&amp;win=400x300&amp;cdi=32&amp;java=false&amp;shk=n&amp;svg=y&amp;fla=n&amp;rp=n&amp;mov=n&amp;wma=n&amp;pdf=n&amp;uid=webuser_id1387251755011r43&amp;sid=websession_id1387251755011r43" height="0" width="0" border="0"><iframe id="looyu_leave" src="http://m182.looyu.com/monitor/l.jsp?c=l&amp;i=46802&amp;v=8af067671af0f82211e5aa01b481fc7be4&amp;p=undefined&amp;_t=1387251758487"></iframe>
+
+
+
+<script language="javascript">
+function chengeStyle1(tem,tdname,tbname,sno,eno){
+	for(var i=parseInt(sno);i<(parseInt(eno)+1);i++){
+		if(parseInt(tem) == i){
+			document.getElementById(tdname+i).className="linkf14_black1 but_bg_on pad_t7";
+			document.getElementById(tbname+i).style.display="block";
+		}else{
+			if(typeof(document.getElementById(tdname+i))== "undefined" && document.getElementById(tdname+i) == null ){}else{
+				
+				document.getElementById(tdname+i).className="linkf14_whlie4 but_bg_off pad_t7";
+				document.getElementById(tbname+i).style.display="none";
+				
+			}
+		}
+	}
+}
+</script>
+<script language="javascript">
+function checkShow(){
+	for(var i=0;i<10;i++){
+		var m = i+1;
+		var td = document.getElementById("td"+m);
+		if(td.style.display == ""){
+			chengeStyle1(m,'td','table','1','10')
+			break;
+		}
+	}
+}
+checkShow();
+</script>
+<script type="text/javascript">
+//20110629可能会喜欢的
+//歌剧院
+var lastDate_ = "";
+if(jtDate.indexOf("-") != -1){
+	lastDate_ = jtDate.split("-")[1];
+}else{
+	lastDate_ = jtDate;
+}
+var PerformanceType_ = "歌剧,西洋";
+PerformanceType_arr = PerformanceType_.substring(0,PerformanceType_.indexOf(","));
+var cookie_djytheatretype = $.cookie("djytheatretype");
+if(cookie_djytheatretype==null||cookie_djytheatretype==""){
+//alert(0);
+$.cookie("djytheatretype",PerformanceType_arr+"_"+lastDate_,{expires: 30,path: '/'});
+}else{
+//alert(1);
+$.cookie("djytheatretype",cookie_djytheatretype+","+PerformanceType_arr+"_"+lastDate_,{expires: 30,path: '/'});
+
+cookie_djytheatretype = $.cookie("djytheatretype");
+//alert(cookie_djytheatretype);
+
+}
+//我的大剧院页面设置浏览记录
+setUserHistory();
+</script>
+<map name="Map2" id="Map2"><area shape="rect" coords="155,38,211,98" href="#">
+<area shape="rect" coords="85,40,143,97" href="#">
+<area shape="rect" coords="18,41,73,96" href="#">
+<area shape="rect" coords="8,9,88,29" href="#">
+</map>
+
+
+<script type="text/javascript" src="/templates/inc/shareto_button.js" charset="utf-8"></script>
+<script type="text/javascript" src="/templates/inc/shareto_button.js" charset="utf-8"></script>
+<script language="javascript">
+var aArray = document.getElementsByTagName("a");
+for(var i=0;i<aArray.length;i++){
+	
+	if(aArray[i].href.indexOf("%22") != -1){
+		var temHref = aArray[i].href;
+		temHref = temHref.substring(temHref.indexOf("%22")+3,temHref.length-3);
+		aArray[i].href = temHref;
+	}
+}
+</script>
+
+
+<div id="doyoo_monitor" style="width: 412px; height: 158px; position: fixed; "><div id="doyoo_mon_left" style="background-image: url(http://static.doyoo.net/default/images/monitor/mon_left_1.gif); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; background-position: initial initial; background-repeat: initial initial; "></div><div id="doyoo_mon_back" style="background-image: url(http://static.doyoo.net/default/images/monitor/mon_back_1.gif); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; background-position: initial initial; background-repeat: initial initial; "><div id="doyoo_mon_head" style="cursor: move; ">在线客服</div><div id="doyoo_mon_main">尊敬的客户您好，欢迎光临我公司网站！我是今天的在线值班客服，点击“开始交谈”即可与我对话</div><div id="doyoo_mon_foot"><a id="doyoo_mon_accept" href="#" onclick="doyoo.util.openChat();doyoo.util.accept();return false;" style="background-image: url(http://static.doyoo.net/default/images/monitor/accept_1.gif); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; background-position: initial initial; background-repeat: initial initial; "></a><div id="doyoo_mon_refuse" style="background-image: url(http://static.doyoo.net/default/images/monitor/refuse_1.gif); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; background-position: initial initial; background-repeat: initial initial; "></div></div></div><div id="doyoo_mon_right" style="background-image: url(http://static.doyoo.net/default/images/monitor/mon_right_1.gif); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; background-position: initial initial; background-repeat: no-repeat no-repeat; "></div><div class="doyoo_filter"></div></div></body></html>
