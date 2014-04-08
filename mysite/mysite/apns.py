@@ -14,9 +14,7 @@ def Payload(alert='', badge=1, data={}):
 
 def APN(token, payload, theCertfile):
     theHost = ( 'gateway.sandbox.push.apple.com', 2195 )
-
     data = json.dumps( payload )
-    print(token)
     # Clear out spaces in the device token and convert to hex
     deviceToken = token.replace(' ','').decode('hex')
     byteToken = binascii.unhexlify(token)

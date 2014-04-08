@@ -9,7 +9,6 @@ def push(msg):
     pem = 'source/apns-cer/hongdian-c-push-dev.pem'
     token = msg['udid']
     data = msg['data']
-    print(os.path.exists(pem))
     payload = apns.Payload(msg['content'], msg['count'], data)
     return apns.APN(token, payload, pem)
 
@@ -20,5 +19,5 @@ def startPush(requset):
         'udid': '23bc82b8a5ad01bcbfc1b7166f2a543d767ace7c36acee1b151fa25d0fb7cde8',
         'content': 'ios推送测试'
     }
-    print push(msg)
+    push(msg)
     return HttpResponse("push_success")
