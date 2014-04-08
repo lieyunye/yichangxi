@@ -2,13 +2,14 @@
 import sys
 import apns
 import urllib2
+import os
 from django.http import HttpResponse
 def push(msg):
     #推送需要用到的证书
-    pem = 'hongdian-c-push-dev.pem'
+    pem = 'source/apns-cer/hongdian-c-push-dev.pem'
     token = msg['udid']
     data = msg['data']
-    print(os.path.exists(path))
+    print(os.path.exists(pem))
     payload = apns.Payload(msg['content'], msg['count'], data)
     return apns.APN(token, payload, pem)
 
