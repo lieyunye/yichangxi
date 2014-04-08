@@ -31,3 +31,7 @@ urlpatterns += patterns(
                         url(r'^testMemcache/$','testMemcache'),
                         url(r'^testMongoDB/$','testMongoDB'),
                         )
+urlpatterns += patterns(
+                        'mysite.push_ios',
+                        url(r'^push-ios/$','push-ios'),
+                        )
