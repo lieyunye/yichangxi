@@ -29,4 +29,5 @@ urlpatterns += patterns(
 urlpatterns += patterns(
                         'mysite.jmdetail',
                         url(r'^testMemcache/$','testMemcache'),
+                        url(r'^testMongoDB/$','testMongoDB'),
                         )
