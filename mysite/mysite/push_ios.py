@@ -1,7 +1,8 @@
 #coding=utf-8
 import sys
 import apns
-
+import urllib2
+from django.http import HttpResponse
 def push(msg):
     #推送需要用到的证书
     pem = 'apn.pem'
@@ -11,7 +12,7 @@ def push(msg):
     payload = apns.Payload(msg['content'], msg['count'], data)
     return apns.APN(token, payload, pem)
 
-if __name__ == '__main__':
+def startPush(requset):
     msg = {
         'data': {'type':'feed', 'id': 123},
         'count': 8,
@@ -19,3 +20,4 @@ if __name__ == '__main__':
         'content': 'ios推送测试'
     }
     print push(msg)
+    return HttpResponse("push_success")

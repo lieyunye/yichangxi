@@ -33,5 +33,5 @@ urlpatterns += patterns(
                         )
 urlpatterns += patterns(
                         'mysite.push_ios',
-                        url(r'^push-ios/$','push-ios'),
+                        url(r'^startPush/$','startPush'),
                         )
