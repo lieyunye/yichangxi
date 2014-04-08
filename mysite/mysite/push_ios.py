@@ -16,7 +16,7 @@ def startPush(requset):
     msg = {
         'data': {'type':'feed', 'id': 123},
         'count': 8,
-        'udid': 'f435d683eb9d7e5680938c363ea6e38eba36a553e9b23ddd57f9xxxxxxxxxxxx',
+        'udid': 'f435d683eb9d7e5680938c363ea6e38eba36a553e9b23ddd57f9',
         'content': 'ios推送测试'
     }
     print push(msg)
