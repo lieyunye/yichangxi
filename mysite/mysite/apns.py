@@ -13,7 +13,7 @@ def Payload(alert='', badge=1, data={}):
      return payload
 
 def APN(token, payload, theCertfile):
-    theHost = ( 'gateway.push.apple.com', 2195 )
+    theHost = ( 'gateway.sandbox.push.apple.com', 2195 )
 
     data = json.dumps( payload )
     print(token)
