@@ -18,7 +18,7 @@ def APN(token, payload, theCertfile):
     data = json.dumps( payload )
 
     # Clear out spaces in the device token and convert to hex
-    deviceToken = token.replace(' ','')
+    deviceToken = token.replace(' ','').decode('hex')
     byteToken = binascii.unhexlify(token)
 
     theFormat = '!BH32sH%ds' % len(data)
