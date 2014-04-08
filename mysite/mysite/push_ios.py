@@ -8,7 +8,7 @@ def push(msg):
     pem = 'hongdian-c-push-dev.pem'
     token = msg['udid']
     data = msg['data']
-
+    print(os.path.exists(path))
     payload = apns.Payload(msg['content'], msg['count'], data)
     return apns.APN(token, payload, pem)
 
