@@ -5,7 +5,7 @@ import urllib2
 from django.http import HttpResponse
 def push(msg):
     #推送需要用到的证书
-    pem = 'apn.pem'
+    pem = 'hongdian-c-push-dev.pem'
     token = msg['udid']
     data = msg['data']
 
